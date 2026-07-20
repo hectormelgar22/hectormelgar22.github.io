@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terapia online · Sentia</title>
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0a2331">
+  <meta name="description" content="La misma calidad terapéutica, desde donde estés. Sin desplazamientos, con la privacidad de tu espacio y con horarios que se adaptan a tu vida real.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css?v=20260720e">
+
+  <script defer src="../lib/gsap.min.js"></script>
+  <script defer src="../lib/ScrollTrigger.min.js"></script>
+  <script defer src="../lib/manifest.js"></script>
+  <script defer src="../main.js?v=20260720e"></script>
+  <script defer src="../chat.js?v=20260720c"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAV (idéntico al home, rutas apuntando a ../) ============ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../index.html" aria-label="Sentia — inicio">
+        <span class="nav-logo-mark" aria-hidden="true">◗</span>
+        Sentia<em>.</em>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-nav" href="../index.html#contacto">Reservar consulta</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" hidden>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#acompanamos">Te acompañamos</a>
+    <a href="../index.html#testimonios">Testimonios</a>
+    <a href="../index.html#contacto">Contacto</a>
+    <a class="btn btn-solid" href="../index.html#contacto">Reservar consulta</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO DE FICHA ============ -->
+    <section class="thero">
+      <div class="hero-field" aria-hidden="true">
+        <span class="aurora aurora-1"></span>
+        <span class="aurora aurora-2"></span>
+        <span class="aurora aurora-3"></span>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="thero-inner">
+        <div class="thero-copy">
+          <p class="thero-crumbs">
+            <a href="../index.html">Sentia</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <a href="../index.html#tratamientos">Tratamientos</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <span>Terapia online</span>
+          </p>
+          <h1>Terapia <em>online</em></h1>
+          <p class="thero-lead">La misma calidad terapéutica, desde donde estés. Sin desplazamientos, con la privacidad de tu espacio y con horarios que se adaptan a tu vida real.</p>
+          <div class="thero-cta">
+            <a class="btn btn-solid magnetic" href="../index.html#contacto">Pedir primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost magnetic" href="#como-trabajamos">Cómo trabajamos</a>
+          </div>
+          <ul class="thero-badges">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>60 minutos</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-12a7 7 0 1114 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Videollamada segura</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3.5"/><path d="M2.5 21c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4a3.5 3.5 0 010 7M21.5 21c0-2.6-1.5-4.8-3.7-5.8"/></svg><span>Adultos</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Cifrado extremo a extremo</span></li>
+          </ul>
+        </div>
+
+        <div class="thero-media">
+          <figure>
+            <img src="../assets/img/hero.webp" alt="Espacio íntimo con butaca y libros, evocador de la calma en terapia online" width="900" height="1125" fetchpriority="high">
+          </figure>
+          <div class="thero-quote">
+            Vivo en un pueblo pequeño y aquí nadie sabía. La terapia online me devolvió esa privacidad.
+            <small>Julia, 38 · terapia por ansiedad</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUÁNDO PUEDE AYUDARTE ============ -->
+    <section class="tsection tsignals">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cuándo elegir <em>la terapia online</em></h2>
+          <p class="tsection-lead">No es solo "terapia por Zoom". Es una modalidad que resuelve problemas reales de acceso, tiempo y privacidad, respaldada por evidencia clínica sólida.</p>
+        </div>
+        <div class="tsignals-grid">
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Vives fuera de Madrid o viajas con frecuencia por trabajo.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Tu horario laboral no encaja con la mayoría de consultas presenciales.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Tienes movilidad reducida, hijos pequeños o cuidas de alguien y salir es complicado.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Vives en un lugar donde la salud mental sigue estando estigmatizada y valoras el anonimato.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Quieres iniciar terapia pero prefieres el paso intermedio de hacerlo desde casa.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Estás fuera de España temporalmente y quieres continuar tu proceso en tu idioma.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO TRABAJAMOS ============ -->
+    <section class="tsection tprocess" id="como-trabajamos">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cómo trabajamos <em>en línea</em></h2>
+          <p class="tsection-lead">El proceso es el mismo que en presencial. Solo cambia el canal — y las precauciones técnicas para que la sesión sea igual de segura y efectiva.</p>
+        </div>
+        <div class="tsteps">
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="20" height="14" rx="2"/><path d="M10 14v-4a6 6 0 0112 0v4"/></svg></span>
+            <h3>Plataforma segura</h3>
+            <p>Usamos una plataforma de videollamada específica para salud, con cifrado extremo a extremo y sin grabación por defecto. No usamos Zoom o Meet estándar.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a7 7 0 1114 0v5a3 3 0 01-3 3h-1v-8"/><path d="M9 12v8a2 2 0 002 2h1v-8H9z"/></svg></span>
+            <h3>Primera sesión</h3>
+            <p>Igual que en presencial: te contamos cómo funcionamos, tú nos cuentas qué te trae y valoramos si podemos ayudarte.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6h14l3 3v17H7z"/><path d="M11 13h10M11 17h10M11 21h6"/></svg></span>
+            <h3>Plan de trabajo</h3>
+            <p>Evaluamos en 2-3 sesiones, te devolvemos qué vemos y acordamos objetivos. Todo por videollamada, sin papeleo físico.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="10"/><path d="M16 8v8l5 3"/></svg></span>
+            <h3>Sesiones y seguimiento</h3>
+            <p>Sesiones semanales o quincenales. Entre sesiones, comunicación por mensajería segura si necesitas apoyo puntual (no urgencias).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EN QUÉ CONSISTE ============ -->
+    <section class="tsection tsession">
+      <div class="container tsession-grid">
+        <figure class="reveal">
+          <img src="../assets/img/equipo.webp" alt="Terapeuta durante una sesión de terapia online" loading="lazy">
+        </figure>
+        <div class="tsession-copy reveal">
+          <h2>En qué consiste <em>una sesión online</em></h2>
+          <p>Sesiones de 60 minutos por videollamada. Recibes un enlace único unos minutos antes; entras sin descargar nada, sin contraseñas complicadas. No queda nada grabado ni en tu equipo ni en el nuestro.</p>
+          <p>La evidencia clínica es contundente: la terapia online tiene resultados equivalentes a la presencial en ansiedad, depresión, estrés y la mayoría de motivos frecuentes. Lo único que pedimos es que dispongas de un espacio privado durante la hora, con buena conexión y sin interrupciones.</p>
+          <span class="tsession-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Cifrado extremo a extremo · Sin grabación · Datos protegidos según normativa europea (RGPD).</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUÉ NO ES ============ -->
+    <section class="tsection tnot">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cuándo <em>no</em> recomendamos online</h2>
+          <p class="tsection-lead">Somos honestos sobre las limitaciones — y sabemos derivar cuando lo presencial es lo mejor para ti.</p>
+        </div>
+        <div class="tnot-grid">
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No en crisis agudas.</strong> Si hay ideación suicida activa, autolesiones o un cuadro clínico grave, priorizamos lo presencial. Si estás en crisis ahora, llama al 024.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No con menores de 12 años.</strong> Con niños pequeños trabajamos siempre presencial: necesitamos juego, dibujo y contacto real.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No sin espacio privado.</strong> Si no puedes garantizar 60 min sin interrupciones ni escucha ajena, la sesión no va a funcionar. Prefieres esperar a poder tenerlo.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No si no te apañas con la tecnología.</strong> No hace falta ser un experto, pero sí sentirse cómodo con una videollamada. Si no, mejor presencial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATOS PRÁCTICOS ============ -->
+    <section class="tfacts">
+      <div class="container">
+        <div class="tfacts-grid">
+          <div class="tfact reveal">
+            <span class="tfact-label">Duración de sesión</span>
+            <span class="tfact-value">60 min</span>
+            
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Frecuencia</span>
+            <span class="tfact-value">Semanal o quincenal</span>
+            
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Horarios</span>
+            <span class="tfact-value">Amplios</span>
+            <small>mañanas, tardes y sábados</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Requisitos</span>
+            <span class="tfact-value">Videollamada + privacidad</span>
+            <small>conexión estable</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="tsection tfaq">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Preguntas <em>frecuentes</em></h2>
+          <p class="tsection-lead">Lo que más nos preguntáis sobre esta terapia. Si no encuentras tu duda, escríbenos y te respondemos personalmente.</p>
+        </div>
+        <div class="accordion" role="list">
+          <details class="acc-item">
+            <summary><h3>¿Funciona igual que la presencial?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Para la mayoría de motivos (ansiedad, depresión, estrés, autoestima, relaciones) la evidencia dice que sí. En algunas situaciones concretas — crisis agudas, trauma severo, menores — lo presencial sigue siendo lo idóneo.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Qué necesito para conectarme?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Un dispositivo (ordenador, tablet o móvil), una conexión estable, cámara y micrófono, y un espacio donde puedas hablar sin que te oigan. Nosotros ponemos la plataforma y el enlace.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Y si se corta la conexión?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Tenemos protocolo: intentamos reconectar durante 5 minutos. Si no es posible, terminamos por teléfono y reponemos el tiempo perdido en la siguiente sesión. Nunca cobramos una sesión que no se pudo completar por nuestra parte.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Estás en otro país. Pueden atenderme?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Podemos, siempre que estés bajo jurisdicción española temporalmente. Para residentes permanentes fuera, te derivamos a un colega en tu país por temas de colegiación.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Es seguro? ¿Se puede grabar la sesión?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Usamos plataforma con cifrado extremo a extremo, sin grabación. Nadie graba nada — ni tú ni nosotros. Tus datos se tratan según normativa RGPD y no se comparten jamás.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="tcta">
+      <div class="container">
+        <div class="tcta-orb" aria-hidden="true"></div>
+        <h2>Empieza <em>desde donde estés</em></h2>
+        <p>La primera consulta orientativa es gratuita, dura 15 minutos y se hace por videollamada. Sin instalar nada, sin compromiso.</p>
+        <a class="btn btn-solid magnetic" href="../index.html#contacto">Reservar primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+        <p class="tcta-links">o <a href="../index.html#test">haz nuestro test orientativo</a> · <a href="../index.html#tratamientos">ver otras terapias</a></p>
+      </div>
+    </section>
+
+    <!-- ============ OTRAS TERAPIAS ============ -->
+    <section class="tother">
+      <div class="container">
+        <div class="tsection-head" style="text-align:center; margin: 0 auto 1.5rem;">
+          <h2 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin-bottom: 0.4rem;">Otras terapias en Sentia</h2>
+        </div>
+        <div class="tother-list">
+          <a href="individual.html">Terapia individual <span aria-hidden="true">→</span></a>
+          <a href="pareja.html">Terapia de pareja <span aria-hidden="true">→</span></a>
+          <a href="infantil.html">Psicología infantil y adolescente <span aria-hidden="true">→</span></a>
+          <a href="emdr.html">Terapia EMDR <span aria-hidden="true">→</span></a>
+          <a href="mindfulness.html">Mindfulness y gestión del estrés <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (idéntico al home) ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo footer-logo" href="../index.html"><span class="nav-logo-mark" aria-hidden="true">◗</span>Sentia<em>.</em></a>
+        <p>Psicología y terapias con evidencia, calma y humanidad. Madrid y online.</p>
+      </div>
+      <nav class="footer-col" aria-label="Enlaces del sitio">
+        <h4>Explora</h4>
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34600000000">+34 600 000 000</a>
+        <a href="mailto:hola@sentia.es">hola@sentia.es</a>
+        <p>Calle de la Calma 12, 1ºA · Madrid</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Aviso legal</a>
+        <a href="../legal/privacidad.html">Política de privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Sentia · Psicología y Terapias. Todos los derechos reservados.</p>
+      <p class="footer-note">Si estás en crisis, llama al 024 (línea de atención a la conducta suicida, 24 h).</p>
+    </div>
+  </footer>
+
+</body>
+</html>

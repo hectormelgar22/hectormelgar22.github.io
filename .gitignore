@@ -1,0 +1,8 @@
+# Secretos — NUNCA subir
+backend/php/config.php
+
+# Originales de imágenes (no se despliegan)
+assets/photos/source/
+
+.claude/
+files.zip

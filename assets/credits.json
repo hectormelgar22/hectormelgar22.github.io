@@ -1,0 +1,26 @@
+[
+  {
+    "file": "assets/img/hero.webp",
+    "source": "https://unsplash.com/photos/1689414126346-b21dfbc308de",
+    "photo_id": "photo-1689414126346-b21dfbc308de",
+    "license": "Unsplash License — uso comercial gratuito, sin atribución obligatoria"
+  },
+  {
+    "file": "assets/img/equipo.webp",
+    "source": "https://unsplash.com/photos/1758273241086-f3585ef8c2f8",
+    "photo_id": "photo-1758273241086-f3585ef8c2f8",
+    "license": "Unsplash License — uso comercial gratuito, sin atribución obligatoria"
+  },
+  {
+    "file": "assets/img/calma.webp",
+    "source": "https://unsplash.com/photos/1694282881698-d0197b47305e",
+    "photo_id": "photo-1694282881698-d0197b47305e",
+    "license": "Unsplash License — uso comercial gratuito, sin atribución obligatoria"
+  },
+  {
+    "file": "assets/img/fachada.webp",
+    "source": "https://unsplash.com/photos/1534267744901-b4628a83a1e2",
+    "photo_id": "photo-1534267744901-b4628a83a1e2",
+    "license": "Unsplash License — uso comercial gratuito, sin atribución obligatoria"
+  }
+]

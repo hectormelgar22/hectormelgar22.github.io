@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terapia de pareja · Sentia</title>
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0a2331">
+  <meta name="description" content="Un espacio donde los dos podéis hablar sin ganar la discusión. Recuperar la comunicación, la complicidad y decidir juntos hacia dónde vais.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css?v=20260720e">
+
+  <script defer src="../lib/gsap.min.js"></script>
+  <script defer src="../lib/ScrollTrigger.min.js"></script>
+  <script defer src="../lib/manifest.js"></script>
+  <script defer src="../main.js?v=20260720e"></script>
+  <script defer src="../chat.js?v=20260720c"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAV (idéntico al home, rutas apuntando a ../) ============ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../index.html" aria-label="Sentia — inicio">
+        <span class="nav-logo-mark" aria-hidden="true">◗</span>
+        Sentia<em>.</em>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-nav" href="../index.html#contacto">Reservar consulta</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" hidden>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#acompanamos">Te acompañamos</a>
+    <a href="../index.html#testimonios">Testimonios</a>
+    <a href="../index.html#contacto">Contacto</a>
+    <a class="btn btn-solid" href="../index.html#contacto">Reservar consulta</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO DE FICHA ============ -->
+    <section class="thero">
+      <div class="hero-field" aria-hidden="true">
+        <span class="aurora aurora-1"></span>
+        <span class="aurora aurora-2"></span>
+        <span class="aurora aurora-3"></span>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="thero-inner">
+        <div class="thero-copy">
+          <p class="thero-crumbs">
+            <a href="../index.html">Sentia</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <a href="../index.html#tratamientos">Tratamientos</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <span>Terapia de pareja</span>
+          </p>
+          <h1>Terapia <em>de pareja</em></h1>
+          <p class="thero-lead">Un espacio donde los dos podéis hablar sin ganar la discusión. Recuperar la comunicación, la complicidad y decidir juntos hacia dónde vais.</p>
+          <div class="thero-cta">
+            <a class="btn btn-solid magnetic" href="../index.html#contacto">Pedir primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost magnetic" href="#como-trabajamos">Cómo trabajamos</a>
+          </div>
+          <ul class="thero-badges">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>75 minutos</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-12a7 7 0 1114 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Presencial y online</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3.5"/><path d="M2.5 21c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4a3.5 3.5 0 010 7M21.5 21c0-2.6-1.5-4.8-3.7-5.8"/></svg><span>Dos personas</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Neutral</span></li>
+          </ul>
+        </div>
+
+        <div class="thero-media">
+          <figure>
+            <img src="../assets/img/terapia-pareja.webp" alt="Pareja sentada de espaldas, muy cerca el uno del otro, frente a un lago rodeado de bosque — imagen que evoca cercanía y complicidad" width="900" height="1125" fetchpriority="high">
+          </figure>
+          <div class="thero-quote">
+            Llegamos pensando en separarnos. Salimos entendiéndonos por primera vez en años.
+            <small>Marta y David · 5 meses de proceso</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUÁNDO PUEDE AYUDARTE ============ -->
+    <section class="tsection tsignals">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cuándo es momento <em>de pedir ayuda</em></h2>
+          <p class="tsection-lead">No hay que esperar a la ruptura para venir a terapia de pareja. Cuanto antes lleguéis, más margen hay para reconstruir sin arrasar lo bueno.</p>
+        </div>
+        <div class="tsignals-grid">
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Discutís por lo mismo una y otra vez, y ya nadie recuerda cómo empezó.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Habéis dejado de hablar de las cosas importantes por miedo a la pelea.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Hay una infidelidad, real o emocional, y no sabéis cómo seguir a partir de aquí.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>La intimidad y el deseo se han apagado y ninguno de los dos sabe cómo abrirlo.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Os planteáis separaros pero queréis intentarlo antes con ayuda profesional.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Estáis en un momento vital nuevo — hijos, mudanza, duelo, jubilación — y no os encontráis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO TRABAJAMOS ============ -->
+    <section class="tsection tprocess" id="como-trabajamos">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cómo trabajamos, <em>paso a paso</em></h2>
+          <p class="tsection-lead">El terapeuta no toma partido. Su trabajo es que los dos podáis hablar y ser escuchados, y que las decisiones importantes las toméis vosotros con más claridad.</p>
+        </div>
+        <div class="tsteps">
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a7 7 0 1114 0v5a3 3 0 01-3 3h-1v-8"/><path d="M9 12v8a2 2 0 002 2h1v-8H9z"/></svg></span>
+            <h3>Sesión inicial conjunta</h3>
+            <p>Los dos contáis vuestra versión. El terapeuta escucha, mapea la dinámica y os devuelve una lectura honesta de lo que ve.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6h14l3 3v17H7z"/><path d="M11 13h10M11 17h10M11 21h6"/></svg></span>
+            <h3>Sesiones individuales</h3>
+            <p>Una sesión con cada uno por separado. Sirve para conocer a cada persona, sus expectativas y aquello que quizá no se atreve a decir delante del otro.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 19l-3 3a4 4 0 01-6-6l3-3M19 13l3-3a4 4 0 016 6l-3 3"/><path d="M12 20l8-8"/></svg></span>
+            <h3>Trabajo en pareja</h3>
+            <p>Sesiones conjuntas cada 2 semanas. Trabajamos comunicación, reparación de heridas, negociación de acuerdos y recuperación del vínculo cuando lo hay.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20l5 5L27 8"/><path d="M16 5v4M22 6l-2 3M10 6l2 3"/></svg></span>
+            <h3>Cierre o decisión</h3>
+            <p>El objetivo no siempre es seguir juntos. A veces es separarse bien. En ambos casos, os acompañamos hasta que estéis en un punto sostenible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EN QUÉ CONSISTE ============ -->
+    <section class="tsection tsession">
+      <div class="container tsession-grid">
+        <figure class="reveal">
+          <img src="../assets/img/equipo.webp" alt="Terapeuta escuchando durante una sesión de pareja" loading="lazy">
+        </figure>
+        <div class="tsession-copy reveal">
+          <h2>En qué consiste <em>una sesión</em></h2>
+          <p>Sesiones de 75 minutos, normalmente cada dos semanas. Un poco más largas que la terapia individual porque hay dos personas hablando y necesitamos margen para que ambas se sientan escuchadas.</p>
+          <p>Trabajamos con Terapia Focalizada en las Emociones (TFE) y con el modelo Gottman, dos de los enfoques con más evidencia para parejas. Nada de dramatismos ni tomas de partido: el terapeuta es un guía neutral que os ayuda a hablar sin haceros daño.</p>
+          <span class="tsession-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Los individuales son confidenciales: lo que nos cuentas a solas no vuelve a la sesión conjunta salvo que tú quieras.</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUÉ NO ES ============ -->
+    <section class="tsection tnot">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Qué <em>no es</em> la terapia de pareja</h2>
+          <p class="tsection-lead">Aclaramos las expectativas más habituales — para bien y para mal.</p>
+        </div>
+        <div class="tnot-grid">
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No es un juicio.</strong> El terapeuta no decide quién tiene razón. Ayuda a los dos a entender qué está pasando y a decidir con más claridad.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No siempre acaba en seguir juntos.</strong> A veces la mejor decisión es separarse. Trabajamos también para que esa separación se haga con el menor daño posible, sobre todo si hay hijos.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No sirve si hay violencia activa.</strong> Cuando hay maltrato físico, psicológico o económico, la terapia de pareja no está indicada. Te ayudamos a orientarte hacia los recursos adecuados.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No es un plan rápido.</strong> Reconstruir un vínculo lleva meses. Si prometemos milagros en 4 sesiones, desconfía.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATOS PRÁCTICOS ============ -->
+    <section class="tfacts">
+      <div class="container">
+        <div class="tfacts-grid">
+          <div class="tfact reveal">
+            <span class="tfact-label">Duración de sesión</span>
+            <span class="tfact-value">75 min</span>
+            
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Frecuencia</span>
+            <span class="tfact-value">1 cada 2 semanas</span>
+            <small>semanal en momentos críticos</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Duración del proceso</span>
+            <span class="tfact-value">4 a 8 meses</span>
+            <small>orientativo</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Modalidad</span>
+            <span class="tfact-value">Presencial u online</span>
+            <small>podéis conectaros por separado</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="tsection tfaq">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Preguntas <em>frecuentes</em></h2>
+          <p class="tsection-lead">Lo que más nos preguntáis sobre esta terapia. Si no encuentras tu duda, escríbenos y te respondemos personalmente.</p>
+        </div>
+        <div class="accordion" role="list">
+          <details class="acc-item">
+            <summary><h3>¿Puedo venir yo solo si mi pareja no quiere?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Sí. Trabajar tu parte de la dinámica ya cambia la ecuación de la pareja. Muchas personas empiezan solas y su pareja se suma después.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Qué pasa si uno de los dos ha sido infiel?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Se puede reconstruir, pero requiere honestidad total, tiempo y trabajo. En la primera sesión valoramos si hay condiciones y os explicamos el proceso concreto.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Y si acabamos separándonos igualmente?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>A veces esa es la mejor decisión. Nuestro trabajo es que esa separación se haga con el menor daño posible — para vosotros y para los hijos si los hay.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Tenéis que asistir siempre los dos?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Alternamos sesiones conjuntas con sesiones individuales para cada uno. En algún momento puntual puede venir solo uno, pero el grueso del trabajo requiere a los dos.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Cuánto tarda en notarse?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Hay parejas que en 4 o 5 sesiones ya notan un cambio importante en cómo se hablan. La consolidación real suele llegar entre el mes 3 y el 6.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="tcta">
+      <div class="container">
+        <div class="tcta-orb" aria-hidden="true"></div>
+        <h2>Un espacio <em>para los dos</em></h2>
+        <p>La primera consulta es conjunta, dura 60 minutos y no compromete a nada. Un espacio para contarnos qué está pasando y valorar juntos si podemos ayudaros.</p>
+        <a class="btn btn-solid magnetic" href="../index.html#contacto">Reservar primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+        <p class="tcta-links">o <a href="../index.html#test">haz nuestro test orientativo</a> · <a href="../index.html#tratamientos">ver otras terapias</a></p>
+      </div>
+    </section>
+
+    <!-- ============ OTRAS TERAPIAS ============ -->
+    <section class="tother">
+      <div class="container">
+        <div class="tsection-head" style="text-align:center; margin: 0 auto 1.5rem;">
+          <h2 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin-bottom: 0.4rem;">Otras terapias en Sentia</h2>
+        </div>
+        <div class="tother-list">
+          <a href="individual.html">Terapia individual <span aria-hidden="true">→</span></a>
+          <a href="infantil.html">Psicología infantil y adolescente <span aria-hidden="true">→</span></a>
+          <a href="emdr.html">Terapia EMDR <span aria-hidden="true">→</span></a>
+          <a href="online.html">Terapia online <span aria-hidden="true">→</span></a>
+          <a href="mindfulness.html">Mindfulness y gestión del estrés <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (idéntico al home) ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo footer-logo" href="../index.html"><span class="nav-logo-mark" aria-hidden="true">◗</span>Sentia<em>.</em></a>
+        <p>Psicología y terapias con evidencia, calma y humanidad. Madrid y online.</p>
+      </div>
+      <nav class="footer-col" aria-label="Enlaces del sitio">
+        <h4>Explora</h4>
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34600000000">+34 600 000 000</a>
+        <a href="mailto:hola@sentia.es">hola@sentia.es</a>
+        <p>Calle de la Calma 12, 1ºA · Madrid</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Aviso legal</a>
+        <a href="../legal/privacidad.html">Política de privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Sentia · Psicología y Terapias. Todos los derechos reservados.</p>
+      <p class="footer-note">Si estás en crisis, llama al 024 (línea de atención a la conducta suicida, 24 h).</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMDR · Trauma · Sentia</title>
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0a2331">
+  <meta name="description" content="Un abordaje específico para experiencias que siguen doliendo por dentro aunque hayan pasado los años. Reconocido por la OMS como tratamiento de primera elección para el trauma.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css?v=20260720e">
+
+  <script defer src="../lib/gsap.min.js"></script>
+  <script defer src="../lib/ScrollTrigger.min.js"></script>
+  <script defer src="../lib/manifest.js"></script>
+  <script defer src="../main.js?v=20260720e"></script>
+  <script defer src="../chat.js?v=20260720c"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAV (idéntico al home, rutas apuntando a ../) ============ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../index.html" aria-label="Sentia — inicio">
+        <span class="nav-logo-mark" aria-hidden="true">◗</span>
+        Sentia<em>.</em>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-nav" href="../index.html#contacto">Reservar consulta</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" hidden>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#acompanamos">Te acompañamos</a>
+    <a href="../index.html#testimonios">Testimonios</a>
+    <a href="../index.html#contacto">Contacto</a>
+    <a class="btn btn-solid" href="../index.html#contacto">Reservar consulta</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO DE FICHA ============ -->
+    <section class="thero">
+      <div class="hero-field" aria-hidden="true">
+        <span class="aurora aurora-1"></span>
+        <span class="aurora aurora-2"></span>
+        <span class="aurora aurora-3"></span>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="thero-inner">
+        <div class="thero-copy">
+          <p class="thero-crumbs">
+            <a href="../index.html">Sentia</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <a href="../index.html#tratamientos">Tratamientos</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <span>EMDR · Trauma</span>
+          </p>
+          <h1>Terapia <em>EMDR</em></h1>
+          <p class="thero-lead">Un abordaje específico para experiencias que siguen doliendo por dentro aunque hayan pasado los años. Reconocido por la OMS como tratamiento de primera elección para el trauma.</p>
+          <div class="thero-cta">
+            <a class="btn btn-solid magnetic" href="../index.html#contacto">Pedir primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost magnetic" href="#como-trabajamos">Cómo trabajamos</a>
+          </div>
+          <ul class="thero-badges">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>60–90 min</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-12a7 7 0 1114 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Presencial y online</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3.5"/><path d="M2.5 21c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4a3.5 3.5 0 010 7M21.5 21c0-2.6-1.5-4.8-3.7-5.8"/></svg><span>Adultos y adolescentes</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Evidencia OMS</span></li>
+          </ul>
+        </div>
+
+        <div class="thero-media">
+          <figure>
+            <img src="../assets/img/terapia-emdr.webp" alt="Persona sentada de espaldas en calma junto a un lago rodeado de bosque — imagen que evoca el procesamiento y la sanación en terapia EMDR" width="900" height="1125" fetchpriority="high">
+          </figure>
+          <div class="thero-quote">
+            Llevaba 12 años esquivando el recuerdo. En 8 sesiones, pude mirarlo sin que me rompiera.
+            <small>Ana, 41 · trauma por accidente</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUÁNDO PUEDE AYUDARTE ============ -->
+    <section class="tsection tsignals">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cuándo puede ayudarte <em>el EMDR</em></h2>
+          <p class="tsection-lead">El EMDR está indicado siempre que una experiencia difícil siga condicionando tu presente, sea reciente o muy antigua. No hace falta que sea un trauma "grande": lo importante es cómo lo procesó tu cerebro.</p>
+        </div>
+        <div class="tsignals-grid">
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Recuerdos intrusivos, pesadillas o flashbacks de un evento del pasado.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Reacciones de sobresalto o pánico ante estímulos que "objetivamente" no son peligrosos.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Historial de abuso, negligencia o violencia en la infancia — aunque "nunca lo hayas hablado".</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Ansiedad, fobias o bloqueos cuya raíz sospechas que está en algo que viviste.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Duelo complicado que no acaba de elaborarse por más tiempo que pase.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Sensación de "no ser el mismo" desde un accidente, una operación, un parto traumático.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Miedo escénico, fobia específica o vergüenza intensa que ninguna otra terapia ha aflojado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO TRABAJAMOS ============ -->
+    <section class="tsection tprocess" id="como-trabajamos">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cómo funciona <em>el EMDR</em></h2>
+          <p class="tsection-lead">El EMDR (Desensibilización y Reprocesamiento por Movimientos Oculares) es un protocolo estructurado en 8 fases. No es hipnosis. No es hablar de lo mismo mil veces. Es facilitar al cerebro que reprocese el recuerdo de otra forma.</p>
+        </div>
+        <div class="tsteps">
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a7 7 0 1114 0v5a3 3 0 01-3 3h-1v-8"/><path d="M9 12v8a2 2 0 002 2h1v-8H9z"/></svg></span>
+            <h3>Historia y vínculo</h3>
+            <p>2-4 sesiones para conocer tu historia, tus recursos y decidir juntos qué recuerdos vamos a trabajar y en qué orden.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4l3 6 6 1-4.5 4.5L22 22l-6-3-6 3 1.5-6.5L7 11l6-1z"/></svg></span>
+            <h3>Preparación</h3>
+            <p>Aprendes técnicas de autorregulación (lugar seguro, contenedor) para que puedas gestionar cualquier activación que aparezca.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c2-3 4-3 6 0s4 3 6 0 4-3 6 0 4 3 6 0"/><path d="M3 22c2-3 4-3 6 0s4 3 6 0 4-3 6 0 4 3 6 0"/></svg></span>
+            <h3>Reprocesamiento</h3>
+            <p>Con estimulación bilateral (movimiento ocular, tapping o sonido alterno) el cerebro reprocesa el recuerdo. Ni se olvida ni se borra: cambia cómo lo sientes.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20l5 5L27 8"/><path d="M16 5v4M22 6l-2 3M10 6l2 3"/></svg></span>
+            <h3>Integración</h3>
+            <p>Comprobamos que el recuerdo ha dejado de activarte y reforzamos creencias nuevas y adaptativas. Cerramos cada sesión con seguridad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EN QUÉ CONSISTE ============ -->
+    <section class="tsection tsession">
+      <div class="container tsession-grid">
+        <figure class="reveal">
+          <img src="../assets/img/equipo.webp" alt="Terapeuta especializada en EMDR durante una sesión" loading="lazy">
+        </figure>
+        <div class="tsession-copy reveal">
+          <h2>En qué consiste <em>una sesión</em></h2>
+          <p>Las sesiones de reprocesamiento duran 60 a 90 minutos porque necesitamos tiempo para abrir, procesar y cerrar sin dejarte a medias. Durante la estimulación bilateral, tú evocas el recuerdo y las emociones asociadas, y el terapeuta te guía suavemente.</p>
+          <p>No tendrás que contar el recuerdo con detalle si no quieres. El EMDR trabaja con la representación interna, no con la narración. Muchos pacientes describen que "el recuerdo sigue ahí, pero ya no duele" — que es exactamente el objetivo.</p>
+          <span class="tsession-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Todos nuestros terapeutas de EMDR están acreditados por la Asociación EMDR España.</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUÉ NO ES ============ -->
+    <section class="tsection tnot">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Qué <em>no es</em> el EMDR</h2>
+          <p class="tsection-lead">Aclaramos malentendidos frecuentes sobre este tipo de terapia.</p>
+        </div>
+        <div class="tnot-grid">
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No es hipnosis.</strong> Estás plenamente consciente y en control en todo momento. Puedes parar cuando quieras.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No borra el recuerdo.</strong> El recuerdo sigue ahí. Lo que cambia es la carga emocional: dejas de sentirlo como si estuviera pasando ahora.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No es una terapia "rápida" en todos los casos.</strong> Traumas puntuales pueden resolverse en 6-12 sesiones. Traumas complejos o de la infancia requieren un proceso más largo, con fases de estabilización previas.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No está indicado siempre.</strong> En trastornos disociativos graves, psicosis activa o consumo de sustancias sin control, se necesita estabilización previa. Lo evaluamos honestamente en las primeras sesiones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATOS PRÁCTICOS ============ -->
+    <section class="tfacts">
+      <div class="container">
+        <div class="tfacts-grid">
+          <div class="tfact reveal">
+            <span class="tfact-label">Duración de sesión</span>
+            <span class="tfact-value">60–90 min</span>
+            <small>reprocesamiento</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Frecuencia</span>
+            <span class="tfact-value">Semanal o quincenal</span>
+            
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Duración del proceso</span>
+            <span class="tfact-value">8 a 24 sesiones</span>
+            <small>muy variable</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Modalidad</span>
+            <span class="tfact-value">Presencial u online</span>
+            <small>online con adaptaciones</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="tsection tfaq">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Preguntas <em>frecuentes</em></h2>
+          <p class="tsection-lead">Lo que más nos preguntáis sobre esta terapia. Si no encuentras tu duda, escríbenos y te respondemos personalmente.</p>
+        </div>
+        <div class="accordion" role="list">
+          <details class="acc-item">
+            <summary><h3>¿Y si no recuerdo bien lo que me pasó?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>El EMDR trabaja con lo que hay: emociones, sensaciones corporales, imágenes fragmentarias. No necesitas un recuerdo "completo" ni cronológico. Muchas veces, al reprocesar, aparece información nueva.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Es normal sentirse peor entre sesiones?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Puede haber "activación" en las horas o días siguientes: sueños vívidos, más sensibilidad emocional. Es señal de que el cerebro sigue procesando. Te enseñamos técnicas para gestionarlo y siempre estamos disponibles si algo te desborda.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Sirve para traumas de la infancia?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Sí, es una de sus indicaciones más potentes. En estos casos, la fase de preparación suele ser más larga (a veces meses) para asegurarnos de que llegas al reprocesamiento con recursos suficientes.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Y si me pasa algo hoy — un accidente, un asalto — vale?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Muy útil. El protocolo EMDR de urgencias (EMD-PRECI) aplicado en las primeras semanas puede prevenir que ese evento se cronifique en un trastorno de estrés postraumático.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Se puede combinar con otra terapia o con medicación?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Sí. Trabajamos coordinados con psiquiatras habitualmente. Solo pedimos que no haya cambios importantes de medicación en las fases activas de reprocesamiento.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="tcta">
+      <div class="container">
+        <div class="tcta-orb" aria-hidden="true"></div>
+        <h2>Lo que dolió <em>puede sanar</em></h2>
+        <p>La primera consulta orientativa es gratuita, dura 15 minutos y no compromete a nada. Nos cuentas lo que te trae y valoramos juntos si el EMDR es la vía adecuada para ti.</p>
+        <a class="btn btn-solid magnetic" href="../index.html#contacto">Reservar primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+        <p class="tcta-links">o <a href="../index.html#test">haz nuestro test orientativo</a> · <a href="../index.html#tratamientos">ver otras terapias</a></p>
+      </div>
+    </section>
+
+    <!-- ============ OTRAS TERAPIAS ============ -->
+    <section class="tother">
+      <div class="container">
+        <div class="tsection-head" style="text-align:center; margin: 0 auto 1.5rem;">
+          <h2 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin-bottom: 0.4rem;">Otras terapias en Sentia</h2>
+        </div>
+        <div class="tother-list">
+          <a href="individual.html">Terapia individual <span aria-hidden="true">→</span></a>
+          <a href="pareja.html">Terapia de pareja <span aria-hidden="true">→</span></a>
+          <a href="infantil.html">Psicología infantil y adolescente <span aria-hidden="true">→</span></a>
+          <a href="online.html">Terapia online <span aria-hidden="true">→</span></a>
+          <a href="mindfulness.html">Mindfulness y gestión del estrés <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (idéntico al home) ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo footer-logo" href="../index.html"><span class="nav-logo-mark" aria-hidden="true">◗</span>Sentia<em>.</em></a>
+        <p>Psicología y terapias con evidencia, calma y humanidad. Madrid y online.</p>
+      </div>
+      <nav class="footer-col" aria-label="Enlaces del sitio">
+        <h4>Explora</h4>
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34600000000">+34 600 000 000</a>
+        <a href="mailto:hola@sentia.es">hola@sentia.es</a>
+        <p>Calle de la Calma 12, 1ºA · Madrid</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Aviso legal</a>
+        <a href="../legal/privacidad.html">Política de privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Sentia · Psicología y Terapias. Todos los derechos reservados.</p>
+      <p class="footer-note">Si estás en crisis, llama al 024 (línea de atención a la conducta suicida, 24 h).</p>
+    </div>
+  </footer>
+
+</body>
+</html>

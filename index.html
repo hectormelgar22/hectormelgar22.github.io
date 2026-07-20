@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentia · Psicología y Terapias en Madrid</title>
+  <meta name="description" content="Centro de psicología y terapias. Acompañamiento profesional para ansiedad, depresión, pareja y crecimiento personal. Primera consulta orientativa gratuita.">
+  <meta name="theme-color" content="#0a2331">
+  <meta name="author" content="Sentia · Psicología y Terapias">
+  <link rel="canonical" href="https://sentia.es/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sentia">
+  <meta property="og:title" content="Sentia · Psicología y Terapias en Madrid">
+  <meta property="og:description" content="Terapia psicológica basada en evidencia, con la calma y la cercanía que necesitas. Primera consulta orientativa gratuita.">
+  <meta property="og:image" content="https://sentia.es/assets/img/hero.webp">
+  <meta property="og:image:alt" content="Consulta de Sentia — butaca verde con plantas y libros en un ambiente acogedor">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://sentia.es/">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sentia · Psicología y Terapias en Madrid">
+  <meta name="twitter:description" content="Terapia psicológica basada en evidencia, con la calma y la cercanía que necesitas.">
+  <meta name="twitter:image" content="https://sentia.es/assets/img/hero.webp">
+
+  <!-- Schema.org (SEO local + rich snippets Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "LocalBusiness"],
+    "name": "Sentia · Psicología y Terapias",
+    "description": "Centro de psicología y terapias en Madrid. Terapia individual, de pareja, infantil, EMDR, online y mindfulness.",
+    "url": "https://sentia.es",
+    "logo": "https://sentia.es/assets/img/favicon.svg",
+    "image": "https://sentia.es/assets/img/hero.webp",
+    "telephone": "+34-600-000-000",
+    "email": "hola@sentia.es",
+    "priceRange": "€€",
+    "medicalSpecialty": ["Psychiatric", "Psychotherapy"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle de la Calma 12, 1ºA",
+      "addressLocality": "Madrid",
+      "addressRegion": "Madrid",
+      "postalCode": "28001",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }],
+    "sameAs": []
+  }
+  </script>
+
+  <!-- FAQ Schema (rich snippets: Google despliega las respuestas en resultados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Cuánto dura una sesión y con qué frecuencia son?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Las sesiones individuales duran 60 minutos y las de pareja 75. Al principio suelen ser semanales; a partir del segundo o tercer mes muchas personas pasan a quincenales." } },
+      { "@type": "Question", "name": "¿Cuánto cuesta la terapia?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La primera consulta de orientación (15 min) es gratuita y sin compromiso. Ofrecemos bonos con descuento y tarifa reducida para estudiantes y personas en desempleo." } },
+      { "@type": "Question", "name": "¿La terapia online funciona igual que la presencial?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Para la mayoría de motivos de consulta la evidencia científica muestra resultados equivalentes. Usamos videollamada cifrada." } },
+      { "@type": "Question", "name": "¿Cuánto tiempo tarda en notarse un cambio?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La mayoría empieza a notar alivio a partir de la 4ª–6ª sesión, y cambios más estructurales entre los 3 y 6 meses." } },
+      { "@type": "Question", "name": "¿Todo lo que cuente es confidencial?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. El secreto profesional está protegido por el Código Deontológico del Colegio Oficial de Psicología y por la ley." } },
+      { "@type": "Question", "name": "¿Tenéis convenio con mutuas o aseguradoras?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos con las principales aseguradoras. Escríbenos con el nombre de tu compañía y confirmamos." } },
+      { "@type": "Question", "name": "¿Y si no encajo con mi terapeuta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Te reasignamos otro profesional del equipo sin coste ni preguntas." } },
+      { "@type": "Question", "name": "¿El asistente con IA sustituye a la terapia?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Es una herramienta informativa que no hace diagnósticos, no prescribe tratamientos y no sustituye a un profesional. En crisis llamar al 024 o 112." } }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=20260720e">
+
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js"></script>
+  <script defer src="main.js?v=20260720e"></script>
+  <script defer src="chat.js?v=20260720c"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#top" aria-label="Sentia — inicio">
+        <span class="nav-logo-mark" aria-hidden="true">◗</span>
+        Sentia<em>.</em>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#acompanamos">Te acompañamos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-nav" href="#contacto">Reservar consulta</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" hidden>
+    <a href="#tratamientos">Tratamientos</a>
+    <a href="#acompanamos">Te acompañamos</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn btn-solid" href="#contacto">Reservar consulta</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO · "El primer respiro" ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-field" aria-hidden="true">
+        <span class="aurora aurora-1"></span>
+        <span class="aurora aurora-2"></span>
+        <span class="aurora aurora-3"></span>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-cursor" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-fade" data-delay="0"><span class="eyebrow-dot" aria-hidden="true"></span>Centro de psicología y terapias · Madrid</p>
+          <h1 class="hero-title">
+            <span class="line"><span class="line-i">Todo empieza</span></span>
+            <span class="line"><span class="line-i">por un <em>respiro</em>.</span></span>
+          </h1>
+          <p class="hero-sub hero-fade" data-delay="1">Terapia psicológica basada en evidencia, con la calma y la cercanía que necesitas. Sin listas de espera eternas, sin juicios. Solo un espacio seguro para ti.</p>
+          <div class="hero-cta hero-fade" data-delay="2">
+            <a class="btn btn-solid magnetic" href="#contacto">Pedir primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost magnetic" href="#tratamientos">Ver tratamientos</a>
+          </div>
+        </div>
+
+        <!-- Orbe que respira: 4s inhalar · 1,5s sostener · 5,5s exhalar -->
+        <div class="hero-breath hero-fade" data-delay="1">
+          <div class="breath-stage">
+            <span class="breath-ring" aria-hidden="true"></span>
+            <span class="breath-ring" aria-hidden="true"></span>
+            <span class="breath-ring" aria-hidden="true"></span>
+            <span class="breath-orbit" aria-hidden="true"><i></i></span>
+            <figure class="breath-core">
+              <img src="assets/img/hero.webp" alt="Butaca verde con libros y plantas, el ambiente acogedor de la consulta de Sentia" width="900" height="1125" fetchpriority="high">
+              <span class="breath-sheen" aria-hidden="true"></span>
+            </figure>
+          </div>
+          <p class="breath-guide">
+            <span class="breath-phase">Inhala</span>
+            <small>Respira con nosotros unos segundos</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-foot hero-fade" data-delay="3">
+        <ul class="hero-stats">
+          <li><strong data-counter="12">0</strong><span>años de experiencia</span></li>
+          <li><strong data-counter="1400">0</strong><span>pacientes acompañados</span></li>
+          <li><strong data-counter="97">0</strong><span>% recomiendan Sentia</span></li>
+        </ul>
+        <a class="hero-scroll" href="#acompanamos">
+          <span class="hero-scroll-track" aria-hidden="true"><i></i></span>
+          Descubre Sentia
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Ansiedad</span><i>✳</i><span>Depresión</span><i>✳</i><span>Terapia de pareja</span><i>✳</i><span>Autoestima</span><i>✳</i><span>Estrés laboral</span><i>✳</i><span>Duelo</span><i>✳</i><span>Mindfulness</span><i>✳</i>
+        <span>Ansiedad</span><i>✳</i><span>Depresión</span><i>✳</i><span>Terapia de pareja</span><i>✳</i><span>Autoestima</span><i>✳</i><span>Estrés laboral</span><i>✳</i><span>Duelo</span><i>✳</i><span>Mindfulness</span><i>✳</i>
+      </div>
+    </div>
+
+    <!-- ============ INTRO EDITORIAL ============ -->
+    <section class="intro">
+      <div class="container intro-grid">
+        <div class="intro-media reveal">
+          <figure class="ph ph-tall has-img">
+            <img src="assets/img/equipo.webp" alt="Terapeuta tomando notas durante una sesión en la consulta" width="900" height="1125" loading="lazy">
+          </figure>
+          <div class="intro-badge">
+            <span aria-hidden="true">◗</span>
+            <p>Psicólogos colegiados<br><small>Colegio Oficial de Psicología</small></p>
+          </div>
+        </div>
+        <div class="intro-copy">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Quiénes somos</p>
+          <h2 class="section-title reveal">Un equipo que te escucha <em>de verdad</em></h2>
+          <p class="reveal">En Sentia creemos que pedir ayuda es un acto de valentía, no de debilidad. Somos un equipo de psicólogas y psicólogos colegiados, especializados en terapia cognitivo-conductual, terapias contextuales y EMDR.</p>
+          <p class="reveal">Trabajamos con un método claro: entender qué te pasa, diseñar contigo un plan realista y acompañarte hasta que vuelvas a sentirte tú.</p>
+          <ul class="check-list reveal">
+            <li>Terapia presencial en Madrid y online desde cualquier lugar</li>
+            <li>Enfoques avalados por la evidencia científica</li>
+            <li>Confidencialidad absoluta desde la primera llamada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRATAMIENTOS ============ -->
+    <section class="treatments" id="tratamientos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Tratamientos</p>
+          <h2 class="section-title reveal">Terapias a la medida <em>de tu momento</em></h2>
+          <p class="section-lead reveal">Cada proceso es distinto. Por eso el primer paso siempre es escucharte y proponerte el enfoque que mejor encaje contigo.</p>
+        </div>
+
+        <div class="bento">
+          <article class="bento-card bento-lg" data-tilt>
+            <span class="bento-num" aria-hidden="true">01</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="4.2"/><path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M5 29h22"/></svg></span>
+            <h3>Terapia individual</h3>
+            <p>Un espacio íntimo y sin juicios para trabajar ansiedad, depresión, autoestima o cualquier malestar que te esté frenando. Sesiones de 60 minutos, presenciales u online.</p>
+            <a class="bento-link" href="terapias/individual.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="bento-num" aria-hidden="true">02</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="16" r="7.5"/><circle cx="20" cy="16" r="7.5"/></svg></span>
+            <h3>Terapia de pareja</h3>
+            <p>Recuperad la comunicación y la complicidad. Trabajamos conflictos, celos, rupturas y nuevas etapas.</p>
+            <a class="bento-link" href="terapias/pareja.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="bento-num" aria-hidden="true">03</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 28V13"/><path d="M16 17c-5 0-7-3-7-7 4 0 7 2.5 7 7z"/><path d="M16 14c4.4 0 6.2-2.6 6.2-6.2C18.4 7.8 16 10 16 14z"/></svg></span>
+            <h3>Psicología infantil y adolescente</h3>
+            <p>Acompañamiento a los más jóvenes y a sus familias: emociones, conducta, acoso escolar, TDAH.</p>
+            <a class="bento-link" href="terapias/infantil.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="bento-num" aria-hidden="true">04</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16s5-7 13-7 13 7 13 7-5 7-13 7S3 16 3 16z"/><circle cx="16" cy="16" r="3.2"/></svg></span>
+            <h3>Terapia EMDR</h3>
+            <p>Tratamiento especializado en trauma y experiencias difíciles, avalado por la OMS.</p>
+            <a class="bento-link" href="terapias/emdr.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="bento-num" aria-hidden="true">05</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="24" height="16" rx="2.5"/><path d="M12 27h8"/><path d="M13.5 15.5l5 2.5-5 2.5z"/></svg></span>
+            <h3>Terapia online</h3>
+            <p>La misma calidad terapéutica, desde donde estés. Videollamada segura y horarios flexibles.</p>
+            <a class="bento-link" href="terapias/online.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento-card bento-accent" data-tilt>
+            <span class="bento-num" aria-hidden="true">06</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="3"/><path d="M9.5 22.5a9 9 0 010-13"/><path d="M22.5 9.5a9 9 0 010 13"/><path d="M5.5 26.5a15 15 0 010-21"/><path d="M26.5 5.5a15 15 0 010 21"/></svg></span>
+            <h3>Mindfulness y gestión del estrés</h3>
+            <p>Programas grupales e individuales para aprender a parar, respirar y volver al presente.</p>
+            <a class="bento-link" href="terapias/mindfulness.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMAS COMUNES ============ -->
+    <section class="problems" id="acompanamos">
+      <div class="container problems-grid">
+        <div class="problems-intro">
+          <p class="eyebrow eyebrow-light reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Te acompañamos con</p>
+          <h2 class="section-title reveal">Lo que sientes <em>tiene nombre</em>, y tiene salida</h2>
+          <p class="section-lead reveal">Estos son los motivos de consulta más frecuentes. Si te reconoces en alguno, no estás solo: son más comunes de lo que crees y responden muy bien a la terapia.</p>
+          <figure class="ph ph-wide has-img reveal">
+            <img src="assets/img/calma.webp" alt="Bosque de pinos entre la niebla, en tonos verdes oscuros" width="1400" height="875" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="accordion" role="list">
+          <details class="acc-item" open>
+            <summary><span class="acc-num">01</span><h3>Ansiedad</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Palpitaciones, preocupación constante, sensación de ahogo o pensamientos que no paran. La ansiedad es el motivo de consulta más frecuente — y uno de los que mejor responde al tratamiento psicológico.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">02</span><h3>Depresión y apatía</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Tristeza persistente, falta de energía, pérdida de interés por lo que antes disfrutabas. Te ayudamos a recuperar el sentido y las ganas, paso a paso.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">03</span><h3>Estrés y burnout</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Agotamiento físico y mental, irritabilidad, insomnio. Cuando el trabajo o las responsabilidades te desbordan, aprender a gestionarlo cambia tu vida entera.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">04</span><h3>Autoestima e inseguridad</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Autoexigencia, autocrítica constante, miedo al rechazo. Trabajamos la relación más importante de tu vida: la que tienes contigo.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">05</span><h3>Duelo y pérdidas</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>La pérdida de un ser querido, una ruptura o un cambio vital importante. Acompañamos el duelo para que puedas transitarlo sin quedarte atrapado en él.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">06</span><h3>Insomnio y descanso</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Dificultad para dormir o despertares constantes. El tratamiento cognitivo-conductual del insomnio es la opción más eficaz a largo plazo, por delante de la medicación.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">07</span><h3>Trauma y TOC</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Experiencias difíciles que siguen doliendo, rituales o pensamientos intrusivos. Con EMDR y exposición con prevención de respuesta, hay salida.</p></div>
+          </details>
+        </div>
+      </div>
+
+      <!-- ---- Test de orientación ---- -->
+      <div class="container quiz-wrap">
+        <div class="quiz" id="test">
+          <div class="quiz-head">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-dot" aria-hidden="true"></span>Test de orientación · 2 minutos</p>
+            <h3 class="quiz-title">¿No sabes ponerle nombre a lo que sientes?</h3>
+            <p class="quiz-sub">Responde 14 preguntas y te orientamos sobre qué puede estar pasándote y qué terapia encaja mejor contigo. Anónimo: no guardamos ninguna respuesta.</p>
+          </div>
+          <div class="quiz-stage" data-quiz aria-live="polite">
+            <noscript><p class="quiz-noscript">El test necesita JavaScript. Si lo prefieres, <a href="#contacto">escríbenos directamente</a> y te orientamos en persona.</p></noscript>
+          </div>
+          <p class="quiz-disclaimer">Este test es orientativo y no sustituye una evaluación profesional ni constituye un diagnóstico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Cómo empezamos</p>
+          <h2 class="section-title reveal">Dar el primer paso es <em>más fácil</em> de lo que crees</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Nos escribes</h3>
+            <p>Rellena el formulario o llámanos. Te respondemos en menos de 24 horas laborables.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Primera consulta gratuita</h3>
+            <p>15 minutos para conocernos, entender qué necesitas y proponerte el terapeuta y enfoque adecuados.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Empezamos tu proceso</h3>
+            <p>Sesiones semanales o quincenales, con objetivos claros y revisión de tu progreso.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Testimonios</p>
+          <h2 class="section-title reveal">Historias que <em>nos recuerdan</em> por qué hacemos esto</h2>
+        </div>
+        <div class="testi-grid">
+          <figure class="testi-card reveal" data-tilt>
+            <span class="testi-quote" aria-hidden="true">“</span>
+            <blockquote>Llegué con ataques de ansiedad casi diarios y hoy puedo decir que he recuperado mi vida. Marta me dio herramientas que uso cada día. Ojalá hubiera venido antes.</blockquote>
+            <figcaption>
+              <span class="testi-avatar" aria-hidden="true">L</span>
+              <div><strong>Lucía G.</strong><small>Tratamiento de ansiedad · 8 meses</small></div>
+              <span class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</span>
+            </figcaption>
+          </figure>
+          <figure class="testi-card reveal" data-tilt>
+            <span class="testi-quote" aria-hidden="true">“</span>
+            <blockquote>Íbamos a terapia de pareja como último recurso. Nos enseñaron a hablarnos de otra forma. Un año después, seguimos juntos y mejor que nunca.</blockquote>
+            <figcaption>
+              <span class="testi-avatar" aria-hidden="true">D</span>
+              <div><strong>David y Elena</strong><small>Terapia de pareja · 6 meses</small></div>
+              <span class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</span>
+            </figcaption>
+          </figure>
+          <figure class="testi-card reveal" data-tilt>
+            <span class="testi-quote" aria-hidden="true">“</span>
+            <blockquote>Después de perder a mi padre no encontraba la manera de seguir. La terapia no borró el dolor, pero me enseñó a vivir con él sin que me ahogara.</blockquote>
+            <figcaption>
+              <span class="testi-avatar" aria-hidden="true">J</span>
+              <div><strong>Jorge M.</strong><small>Acompañamiento en duelo · 5 meses</small></div>
+              <span class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</span>
+            </figcaption>
+          </figure>
+          <figure class="testi-card reveal" data-tilt>
+            <span class="testi-quote" aria-hidden="true">“</span>
+            <blockquote>Hago terapia online desde otra ciudad y la cercanía es la misma que en persona. Flexible, profesional y humano. Lo recomiendo a todo el mundo.</blockquote>
+            <figcaption>
+              <span class="testi-avatar" aria-hidden="true">A</span>
+              <div><strong>Ana R.</strong><small>Terapia online · en proceso</small></div>
+              <span class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="testi-note reveal">Testimonios ilustrativos. Protegemos siempre la identidad de nuestros pacientes.</p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Preguntas frecuentes</p>
+          <h2 id="faq-title" class="section-title reveal">Las dudas <em>que más nos hacéis</em></h2>
+          <p class="section-lead reveal">Todo lo que solemos escuchar antes de la primera sesión. Si te queda alguna, escríbenos — respondemos en menos de 24 h laborables.</p>
+          <div class="faq-cta reveal">
+            <a class="btn btn-ghost btn-dark" href="#contacto">Tengo otra pregunta<span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="faq-list reveal" data-faq>
+          <details class="faq-item">
+            <summary><span>¿Cuánto dura una sesión y con qué frecuencia son?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>Las sesiones individuales duran 60 minutos y las de pareja 75. Al principio suelen ser semanales para coger ritmo; a partir del segundo o tercer mes muchas personas pasan a quincenales. Todo se ajusta a ti, nunca al revés.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>¿Cuánto cuesta la terapia?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>La primera consulta de orientación (15 min) es gratuita y sin compromiso. A partir de ahí, cada sesión tiene un precio único y transparente que te decimos antes de reservar. Ofrecemos bonos de 4 y 8 sesiones con descuento y tarifa reducida para estudiantes y personas en desempleo.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>¿La terapia online funciona igual que la presencial?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>La evidencia científica es clara: para la mayoría de motivos de consulta (ansiedad, depresión, autoestima, estrés) los resultados de la terapia online son equivalentes a la presencial. Trabajamos con una plataforma de videollamada cifrada, y muchas personas prefieren la comodidad de hacer sesión desde casa.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>¿Cuánto tiempo tarda en notarse un cambio?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>Depende mucho de la persona y del motivo, pero en general la mayoría empieza a notar alivio a partir de la 4ª–6ª sesión, y cambios más estructurales entre los 3 y 6 meses. En la primera consulta te damos una estimación honesta basada en tu caso.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>¿Todo lo que cuente es confidencial?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>Sí, absolutamente. El secreto profesional es la base del vínculo terapéutico y está protegido por el Código Deontológico del Colegio Oficial de Psicología y por la ley. Solo existen excepciones muy tasadas (riesgo grave para la vida propia o de terceros) que te explicamos en la primera sesión.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>¿Tenéis convenio con mutuas o aseguradoras?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>Trabajamos con las principales aseguradoras del país. Escríbenos con el nombre de tu compañía y te decimos si podemos facturar directamente a la mutua o si tienes que solicitar el reembolso después.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>¿Y si no encajo con mi terapeuta?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>Es normal y no pasa nada. El vínculo terapéutico es lo más importante, así que si sientes que no encajáis, dínoslo con total libertad: te reasignamos otro profesional del equipo sin coste ni preguntas. Preferimos que estés en manos adecuadas antes que en las nuestras.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>¿El asistente con IA sustituye a la terapia?</span><i aria-hidden="true"></i></summary>
+            <div class="faq-body"><p>No. Es una herramienta informativa que resuelve dudas sobre nuestros servicios y te ayuda a orientarte, pero <strong>no hace diagnósticos, no prescribe tratamientos y no sustituye a un profesional</strong>. Si estás en crisis, por favor llama al 024 o al 112.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <div class="cta-mesh" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <h2 class="reveal">No tienes que poder <em>con todo tú solo.</em></h2>
+        <a class="btn btn-cream reveal" href="#contacto">Hablemos<span class="btn-arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Contacto</p>
+          <h2 class="section-title reveal">Da el primer paso, <em>nosotros hacemos el resto</em></h2>
+          <p class="reveal">Cuéntanos brevemente qué te trae por aquí. Te responderemos en menos de 24 horas laborables con total confidencialidad.</p>
+          <ul class="contact-list reveal">
+            <li><span aria-hidden="true">✆</span><div><small>Teléfono</small><a href="tel:+34600000000">+34 600 000 000</a></div></li>
+            <li><span aria-hidden="true">✉</span><div><small>Email</small><a href="mailto:hola@sentia.es">hola@sentia.es</a></div></li>
+            <li><span aria-hidden="true">◎</span><div><small>Consulta</small><p>Calle de la Calma 12, 1ºA · Madrid</p></div></li>
+            <li><span aria-hidden="true">◷</span><div><small>Horario</small><p>Lun–Vie · 9:00–20:00</p></div></li>
+          </ul>
+          <figure class="ph ph-map has-img reveal">
+            <img src="assets/img/fachada.webp" alt="Puerta verde de la entrada de la consulta, con hiedra y flores" width="1280" height="720" loading="lazy">
+          </figure>
+        </div>
+
+        <form class="contact-form reveal" action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Nombre</label>
+              <input id="f-name" name="nombre" type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Teléfono</label>
+              <input id="f-phone" name="telefono" type="tel" placeholder="600 000 000">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="field">
+            <label for="f-topic">¿Qué te gustaría trabajar?</label>
+            <select id="f-topic" name="motivo">
+              <option value="">Selecciona una opción (opcional)</option>
+              <option>Ansiedad</option>
+              <option>Depresión o apatía</option>
+              <option>Terapia de pareja</option>
+              <option>Estrés / burnout</option>
+              <option>Autoestima</option>
+              <option>Duelo</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Cuéntanos un poco más</label>
+            <textarea id="f-msg" name="mensaje" rows="4" placeholder="Escribe con libertad, este mensaje es confidencial."></textarea>
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="privacidad" required>
+            <span>He leído y acepto la <a href="legal/privacidad.html">política de privacidad</a>.</span>
+          </label>
+          <button class="btn btn-solid btn-full" type="submit">Enviar mensaje<span class="btn-arrow" aria-hidden="true">→</span></button>
+          <p class="form-note">🔒 Tus datos están protegidos y nunca se comparten con terceros.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo footer-logo" href="#top"><span class="nav-logo-mark" aria-hidden="true">◗</span>Sentia<em>.</em></a>
+        <p>Psicología y terapias con evidencia, calma y humanidad. Madrid y online.</p>
+      </div>
+      <nav class="footer-col" aria-label="Enlaces del sitio">
+        <h4>Explora</h4>
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#acompanamos">Te acompañamos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34600000000">+34 600 000 000</a>
+        <a href="mailto:hola@sentia.es">hola@sentia.es</a>
+        <p>Calle de la Calma 12, 1ºA · Madrid</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="legal/aviso-legal.html">Aviso legal</a>
+        <a href="legal/privacidad.html">Política de privacidad</a>
+        <a href="legal/cookies.html">Cookies</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Sentia · Psicología y Terapias. Todos los derechos reservados.</p>
+      <p class="footer-note">Si estás en crisis, llama al 024 (línea de atención a la conducta suicida, 24 h).</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada · Sentia</title>
+  <meta name="description" content="La página que buscas no existe. Vuelve al inicio o cuéntanos qué buscabas.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260720e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <style>
+    /* Página 404: reutiliza el fondo oscuro del hero para reforzar marca */
+    .nf {
+      min-height: 100svh;
+      display: grid; place-items: center;
+      background:
+        radial-gradient(120% 80% at 78% 18%, rgba(20, 82, 71, 0.55) 0%, transparent 55%),
+        radial-gradient(90% 70% at 12% 85%, rgba(22, 66, 91, 0.5) 0%, transparent 60%),
+        linear-gradient(168deg, #071b26 0%, #0a2c2a 48%, #08222f 100%);
+      color: var(--cream);
+      padding: clamp(6rem, 14vh, 9rem) var(--pad) clamp(3rem, 8vh, 5rem);
+      position: relative; overflow: hidden;
+      text-align: center;
+    }
+    .nf::before, .nf::after {
+      content: ""; position: absolute;
+      border-radius: 50%; filter: blur(80px);
+      mix-blend-mode: screen;
+    }
+    .nf::before {
+      width: 40vw; height: 40vw; left: -10%; top: -10%;
+      background: radial-gradient(circle, rgba(46, 158, 126, 0.4), transparent 60%);
+    }
+    .nf::after {
+      width: 40vw; height: 40vw; right: -10%; bottom: -10%;
+      background: radial-gradient(circle, rgba(22, 66, 91, 0.4), transparent 60%);
+    }
+    .nf-inner { position: relative; max-width: 640px; }
+    .nf-code {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(6rem, 20vw, 12rem);
+      line-height: 0.9;
+      background: linear-gradient(135deg, var(--sage), var(--emerald));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      margin-bottom: 1rem;
+    }
+    .nf-title {
+      font-family: var(--font-display); font-weight: 420;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.15; margin-bottom: 1rem;
+    }
+    .nf-title em { font-style: italic; color: var(--sage); }
+    .nf-lead {
+      font-size: 1.05rem; color: rgba(245, 242, 234, 0.75);
+      margin-bottom: 2.2rem;
+    }
+    .nf-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .nf-links {
+      margin-top: 3rem; padding-top: 2rem;
+      border-top: 1px solid var(--line-light);
+      font-size: 0.9rem;
+    }
+    .nf-links strong {
+      display: block; margin-bottom: 0.8rem;
+      color: rgba(245, 242, 234, 0.55);
+      font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+      font-weight: 500;
+    }
+    .nf-links ul {
+      list-style: none; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+    }
+    .nf-links a { color: var(--cream); text-decoration: underline; text-underline-offset: 4px; }
+    .nf-links a:hover { color: var(--sage); }
+  </style>
+</head>
+<body>
+  <main class="nf">
+    <div class="nf-inner">
+      <div class="nf-code">404</div>
+      <h1 class="nf-title">Esta página se ha <em>tomado un respiro</em></h1>
+      <p class="nf-lead">La dirección que buscas no existe o se ha movido. No pasa nada — te llevamos de vuelta a un sitio seguro.</p>
+      <div class="nf-cta">
+        <a class="btn btn-solid" href="/">Volver al inicio<span class="btn-arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="/#contacto">Escribirnos</a>
+      </div>
+      <div class="nf-links">
+        <strong>O ve directo a</strong>
+        <ul>
+          <li><a href="/#tratamientos">Tratamientos</a></li>
+          <li><a href="/#acompanamos">Te acompañamos</a></li>
+          <li><a href="/#testimonios">Testimonios</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

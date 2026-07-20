@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness · Estrés · Sentia</title>
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0a2331">
+  <meta name="description" content="Programas basados en evidencia para aprender a parar, respirar y volver al presente. Herramientas concretas para gestionar el estrés que se quedan contigo para siempre.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css?v=20260720e">
+
+  <script defer src="../lib/gsap.min.js"></script>
+  <script defer src="../lib/ScrollTrigger.min.js"></script>
+  <script defer src="../lib/manifest.js"></script>
+  <script defer src="../main.js?v=20260720e"></script>
+  <script defer src="../chat.js?v=20260720c"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAV (idéntico al home, rutas apuntando a ../) ============ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../index.html" aria-label="Sentia — inicio">
+        <span class="nav-logo-mark" aria-hidden="true">◗</span>
+        Sentia<em>.</em>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-nav" href="../index.html#contacto">Reservar consulta</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" hidden>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#acompanamos">Te acompañamos</a>
+    <a href="../index.html#testimonios">Testimonios</a>
+    <a href="../index.html#contacto">Contacto</a>
+    <a class="btn btn-solid" href="../index.html#contacto">Reservar consulta</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO DE FICHA ============ -->
+    <section class="thero">
+      <div class="hero-field" aria-hidden="true">
+        <span class="aurora aurora-1"></span>
+        <span class="aurora aurora-2"></span>
+        <span class="aurora aurora-3"></span>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="thero-inner">
+        <div class="thero-copy">
+          <p class="thero-crumbs">
+            <a href="../index.html">Sentia</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <a href="../index.html#tratamientos">Tratamientos</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            <span>Mindfulness · Estrés</span>
+          </p>
+          <h1>Mindfulness y <em>gestión del estrés</em></h1>
+          <p class="thero-lead">Programas basados en evidencia para aprender a parar, respirar y volver al presente. Herramientas concretas para gestionar el estrés que se quedan contigo para siempre.</p>
+          <div class="thero-cta">
+            <a class="btn btn-solid magnetic" href="../index.html#contacto">Pedir primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost magnetic" href="#como-trabajamos">Cómo trabajamos</a>
+          </div>
+          <ul class="thero-badges">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>8 semanas</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-12a7 7 0 1114 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Grupal e individual</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3.5"/><path d="M2.5 21c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4a3.5 3.5 0 010 7M21.5 21c0-2.6-1.5-4.8-3.7-5.8"/></svg><span>Adultos</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Programa MBSR</span></li>
+          </ul>
+        </div>
+
+        <div class="thero-media">
+          <figure>
+            <img src="../assets/img/calma.webp" alt="Bosque de pinos entre la niebla — símbolo del programa de mindfulness" width="900" height="1125" fetchpriority="high">
+          </figure>
+          <div class="thero-quote">
+            En 8 semanas aprendí más sobre mi cabeza que en 10 años de intentar meditar por mi cuenta.
+            <small>Carlos, 46 · participante de MBSR</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUÁNDO PUEDE AYUDARTE ============ -->
+    <section class="tsection tsignals">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cuándo te puede <em>encajar</em></h2>
+          <p class="tsection-lead">El mindfulness no es una moda ni una postura zen. Es una habilidad entrenable, con protocolos clínicos claros y resultados medibles. Estas son las señales de que puede ayudarte.</p>
+        </div>
+        <div class="tsignals-grid">
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Vives con el piloto automático puesto: llegas al final del día sin recordar qué has hecho.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Tu cabeza no para de darle vueltas a lo mismo — pasado, futuro, escenarios que no ocurren.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Sabes que necesitas parar pero cuando lo intentas, te aburres o te agobias más.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Tienes ansiedad, estrés laboral o insomnio y buscas algo complementario a la terapia.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Ya practicas por tu cuenta con apps y quieres profundizar con estructura y guía humana.</p>
+          </article>
+          <article class="tsignal reveal">
+            <span class="tsignal-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg></span>
+            <p>Trabajas cuidando a otros (sanitarios, docentes, cuidadores) y necesitas un espacio para ti.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO TRABAJAMOS ============ -->
+    <section class="tsection tprocess" id="como-trabajamos">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Cómo funciona <em>el programa</em></h2>
+          <p class="tsection-lead">Nuestro programa insignia es MBSR (Mindfulness-Based Stress Reduction), el protocolo de 8 semanas creado en la Universidad de Massachusetts. Es el más estudiado del mundo, con miles de publicaciones detrás.</p>
+        </div>
+        <div class="tsteps">
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6h14l3 3v17H7z"/><path d="M11 13h10M11 17h10M11 21h6"/></svg></span>
+            <h3>Entrevista previa</h3>
+            <p>Sesión individual gratuita para conocerte, valorar si el programa te encaja y resolver dudas antes de comprometerte.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4l3 6 6 1-4.5 4.5L22 22l-6-3-6 3 1.5-6.5L7 11l6-1z"/></svg></span>
+            <h3>8 sesiones semanales</h3>
+            <p>Sesiones de 2 horas en grupo pequeño (máx. 12 personas). Cada semana, un tema y una práctica: respiración, cuerpo, emociones, pensamientos, relaciones.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c2-3 4-3 6 0s4 3 6 0 4-3 6 0 4 3 6 0"/><path d="M3 22c2-3 4-3 6 0s4 3 6 0 4-3 6 0 4 3 6 0"/></svg></span>
+            <h3>Práctica en casa</h3>
+            <p>45 minutos al día de práctica guiada por audio. Es la clave: sin ella, el programa no funciona. Sí, es exigente. Sí, cambia la vida.</p>
+          </article>
+          <article class="tstep reveal">
+            <span class="tstep-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20l5 5L27 8"/><path d="M16 5v4M22 6l-2 3M10 6l2 3"/></svg></span>
+            <h3>Jornada de silencio</h3>
+            <p>Un sábado, hacia la semana 6, hacemos una jornada de práctica de 6 horas en silencio. Suena intenso — y para muchos es el momento clave del programa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EN QUÉ CONSISTE ============ -->
+    <section class="tsection tsession">
+      <div class="container tsession-grid">
+        <figure class="reveal">
+          <img src="../assets/img/equipo.webp" alt="Sesión grupal de mindfulness en la sala" loading="lazy">
+        </figure>
+        <div class="tsession-copy reveal">
+          <h2>En qué consiste <em>el programa MBSR</em></h2>
+          <p>Ocho semanas. Un grupo estable. Un instructor certificado. Prácticas formales (meditación sentada, escaneo corporal, movimiento consciente) y prácticas informales (integrar el mindfulness en actividades cotidianas: comer, caminar, escuchar).</p>
+          <p>El grupo es una parte importante. No es "terapia de grupo" — no cuentas tu vida — pero sí escuchas a otros que están descubriendo lo mismo que tú, y eso normaliza y sostiene. Si prefieres no ir en grupo, tenemos formato individual (8 sesiones de 60 min).</p>
+          <span class="tsession-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z"/></svg><span>Nuestros instructores están certificados por el Center for Mindfulness de la Universidad de Massachusetts.</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUÉ NO ES ============ -->
+    <section class="tsection tnot">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Qué <em>no es</em> el mindfulness</h2>
+          <p class="tsection-lead">Aclaramos malentendidos habituales — para que no vengas esperando algo distinto.</p>
+        </div>
+        <div class="tnot-grid">
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No es dejar la mente en blanco.</strong> Es aprender a relacionarte de otra forma con lo que aparece en ella. La mente pensará; el cambio está en cómo la escuchas.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No es una religión.</strong> MBSR es un protocolo laico, científico y sin ninguna carga espiritual. Compatible con cualquier creencia — o con ninguna.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No sustituye a la terapia.</strong> En depresión o ansiedad clínica, el mindfulness es un complemento excelente pero no reemplaza al tratamiento psicológico o farmacológico.</p>
+          </div>
+          <div class="tnot-item reveal">
+            <span class="tnot-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+            <p><strong>No es una app.</strong> Las apps ayudan a mantener la práctica, pero no sustituyen el aprendizaje inicial con un instructor humano. Y sin práctica diaria, ninguna app va a cambiarte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATOS PRÁCTICOS ============ -->
+    <section class="tfacts">
+      <div class="container">
+        <div class="tfacts-grid">
+          <div class="tfact reveal">
+            <span class="tfact-label">Duración del programa</span>
+            <span class="tfact-value">8 semanas</span>
+            <small>+ jornada de silencio</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Sesión semanal</span>
+            <span class="tfact-value">2 horas</span>
+            <small>60 min en individual</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Grupo</span>
+            <span class="tfact-value">Máx. 12 personas</span>
+            <small>individual también disponible</small>
+          </div>
+          <div class="tfact reveal">
+            <span class="tfact-label">Práctica en casa</span>
+            <span class="tfact-value">45 min al día</span>
+            <small>audio guiado incluido</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="tsection tfaq">
+      <div class="container">
+        <div class="tsection-head reveal">
+          <h2>Preguntas <em>frecuentes</em></h2>
+          <p class="tsection-lead">Lo que más nos preguntáis sobre esta terapia. Si no encuentras tu duda, escríbenos y te respondemos personalmente.</p>
+        </div>
+        <div class="accordion" role="list">
+          <details class="acc-item">
+            <summary><h3>¿Nunca he meditado. Puedo apuntarme?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Sí. El programa está diseñado para principiantes absolutos. De hecho, quienes llegan sin ideas previas suelen avanzar más rápido.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Y si me duermo o me distraigo constantemente?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Es lo normal, especialmente al principio. Lo que se entrena no es "no distraerse", sino darse cuenta cuando ocurre y volver — sin juzgarse. Esa es la habilidad clave.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Voy a tener que contar mi vida delante del grupo?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>No. El grupo comparte cómo va la práctica, no historias personales. La confidencialidad es total y las intervenciones son voluntarias.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Tiene evidencia científica de verdad?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Miles de estudios publicados. Efectos consistentes en reducción de estrés, ansiedad, depresión, dolor crónico y mejora del sueño. Es probablemente la intervención de bienestar con más respaldo científico que existe.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><h3>¿Y si en mitad del programa quiero dejarlo?</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Puedes hacerlo, aunque insistimos en que el efecto se ve al completar las 8 semanas. Los cambios importantes suelen aparecer entre la sesión 4 y la 6, y quien lo deja antes se los pierde.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="tcta">
+      <div class="container">
+        <div class="tcta-orb" aria-hidden="true"></div>
+        <h2>Aprende a <em>parar</em></h2>
+        <p>La entrevista previa al programa es gratuita, dura 30 minutos y sirve para valorar juntos si MBSR es lo que necesitas. Sin compromiso.</p>
+        <a class="btn btn-solid magnetic" href="../index.html#contacto">Reservar primera consulta<span class="btn-arrow" aria-hidden="true">→</span></a>
+        <p class="tcta-links">o <a href="../index.html#test">haz nuestro test orientativo</a> · <a href="../index.html#tratamientos">ver otras terapias</a></p>
+      </div>
+    </section>
+
+    <!-- ============ OTRAS TERAPIAS ============ -->
+    <section class="tother">
+      <div class="container">
+        <div class="tsection-head" style="text-align:center; margin: 0 auto 1.5rem;">
+          <h2 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin-bottom: 0.4rem;">Otras terapias en Sentia</h2>
+        </div>
+        <div class="tother-list">
+          <a href="individual.html">Terapia individual <span aria-hidden="true">→</span></a>
+          <a href="pareja.html">Terapia de pareja <span aria-hidden="true">→</span></a>
+          <a href="infantil.html">Psicología infantil y adolescente <span aria-hidden="true">→</span></a>
+          <a href="emdr.html">Terapia EMDR <span aria-hidden="true">→</span></a>
+          <a href="online.html">Terapia online <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (idéntico al home) ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo footer-logo" href="../index.html"><span class="nav-logo-mark" aria-hidden="true">◗</span>Sentia<em>.</em></a>
+        <p>Psicología y terapias con evidencia, calma y humanidad. Madrid y online.</p>
+      </div>
+      <nav class="footer-col" aria-label="Enlaces del sitio">
+        <h4>Explora</h4>
+        <a href="../index.html#tratamientos">Tratamientos</a>
+        <a href="../index.html#acompanamos">Te acompañamos</a>
+        <a href="../index.html#testimonios">Testimonios</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34600000000">+34 600 000 000</a>
+        <a href="mailto:hola@sentia.es">hola@sentia.es</a>
+        <p>Calle de la Calma 12, 1ºA · Madrid</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Aviso legal</a>
+        <a href="../legal/privacidad.html">Política de privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Sentia · Psicología y Terapias. Todos los derechos reservados.</p>
+      <p class="footer-note">Si estás en crisis, llama al 024 (línea de atención a la conducta suicida, 24 h).</p>
+    </div>
+  </footer>
+
+</body>
+</html>

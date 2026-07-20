@@ -1,0 +1,7 @@
+# Bloquea el acceso directo a la configuración (defensa extra)
+<Files "config.php">
+  Require all denied
+</Files>
+<Files "config.example.php">
+  Require all denied
+</Files>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Documentos legales indexables solo si el buscador los encuentra por sí mismo
+Disallow: /assets/photos/source/
+Disallow: /backend/
+
+Sitemap: https://sentia.es/sitemap.xml

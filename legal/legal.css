@@ -1,0 +1,74 @@
+/* Estilos comunes a las páginas legales de Sentia */
+.legal { background: var(--cream); padding: clamp(6rem, 12vh, 8rem) 0 clamp(4rem, 8vh, 6rem); }
+.legal-doc { max-width: 780px; margin: 0 auto; padding: 0 var(--pad); }
+.legal-doc .eyebrow { margin-bottom: 1rem; color: rgba(10, 35, 49, 0.55); }
+.legal-doc h1 {
+  font-family: var(--font-display);
+  font-weight: 420;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+.legal-doc h1 em { font-style: italic; color: var(--emerald); }
+.legal-updated {
+  font-size: 0.85rem; color: rgba(10, 35, 49, 0.55);
+  margin-bottom: 3rem; padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.legal-doc h2 {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--ink);
+}
+.legal-doc h3 {
+  font-weight: 600; font-size: 1.05rem;
+  margin: 1.5rem 0 0.5rem; color: var(--pine);
+}
+.legal-doc p, .legal-doc li {
+  font-size: 1rem; line-height: 1.75; color: rgba(10, 35, 49, 0.85);
+}
+.legal-doc p + p { margin-top: 0.9rem; }
+.legal-doc ul, .legal-doc ol { margin: 0.9rem 0 0.9rem 1.5rem; }
+.legal-doc li + li { margin-top: 0.4rem; }
+.legal-doc a { color: var(--pine); text-decoration: underline; text-underline-offset: 3px; }
+.legal-doc a:hover { color: var(--emerald); }
+.legal-doc strong { color: var(--ink); }
+.legal-doc code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.9em; padding: 0.1rem 0.35rem;
+  background: rgba(10, 35, 49, 0.08); border-radius: 4px;
+}
+.legal-doc hr { margin: 3rem 0; border: none; border-top: 1px solid var(--line); }
+.legal-foot { font-size: 0.9rem; color: rgba(10, 35, 49, 0.7); }
+.callout {
+  background: rgba(46, 158, 126, 0.08);
+  border-left: 3px solid var(--emerald);
+  padding: 1rem 1.2rem; border-radius: 8px;
+  margin: 1.5rem 0; font-size: 0.95rem;
+}
+.callout strong { color: var(--pine); }
+.legal-toc {
+  margin: 2.5rem 0; padding: 1.3rem 1.5rem;
+  background: var(--white); border: 1px solid var(--line); border-radius: 14px;
+}
+.legal-toc h4 {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(10, 35, 49, 0.55); margin-bottom: 0.8rem;
+}
+.legal-toc ol { margin: 0; padding-left: 1.2rem; font-size: 0.94rem; }
+.legal-doc table {
+  width: 100%; margin: 1rem 0 1.5rem;
+  border-collapse: collapse; font-size: 0.92rem;
+}
+.legal-doc th, .legal-doc td {
+  text-align: left; padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--line); vertical-align: top;
+}
+.legal-doc thead th {
+  font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--pine); background: rgba(46, 158, 126, 0.06);
+}
+.placeholder {
+  background: rgba(255, 200, 0, 0.18); padding: 0 0.3rem;
+  border-radius: 3px; color: #8a6300; font-weight: 500;
+}
