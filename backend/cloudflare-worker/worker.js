@@ -180,7 +180,14 @@ export default {
         temperature: 0.6,
         // 900 tokens ≈ 600-700 palabras: suficiente para respuestas cerradas
         // sin cortarse a mitad de frase.
-        maxOutputTokens: 900
+        maxOutputTokens: 900,
+        // CLAVE: en Gemini 2.5 el "pensamiento" interno cuenta contra
+        // maxOutputTokens. Con thinking activado, el modelo gasta casi todo
+        // el presupuesto razonando y la respuesta visible se corta a media
+        // frase (p. ej. "Estoy aquí para"). Para un asistente de soporte no
+        // aporta nada: lo desactivamos y dejamos los 900 tokens íntegros
+        // para el texto que ve el usuario.
+        thinkingConfig: { thinkingBudget: 0 }
       }
     };
 
