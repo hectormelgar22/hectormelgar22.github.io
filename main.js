@@ -686,7 +686,13 @@
     renderQuestion();
   }
 
-  /* ---------- Formulario: feedback de envío (demo) ---------- */
+  /* ---------- Formulario de contacto ---------- */
+  // Único dato a cambiar al conectar el buzón real: crea una cuenta gratis en
+  // https://formspree.io, crea un formulario y pega aquí su endpoint (algo
+  // como "https://formspree.io/f/xxxxaaaa"). Mientras diga "TU_ENDPOINT_AQUI"
+  // el formulario avisa por consola y no intenta enviar nada.
+  var FORM_ENDPOINT = "https://formspree.io/f/mlgqlppw";
+
   function initForm() {
     var form = $(".contact-form");
     if (!form) return;
@@ -698,13 +704,38 @@
       }
       var btn = $('button[type="submit"]', form);
       var original = btn.innerHTML;
-      btn.innerHTML = "✓ Mensaje enviado. Te contactamos pronto.";
+
+      if (FORM_ENDPOINT === "TU_ENDPOINT_AQUI") {
+        console.warn("Formulario de contacto sin conectar: falta FORM_ENDPOINT en main.js");
+        btn.innerHTML = "✓ Mensaje enviado. Te contactamos pronto.";
+        btn.disabled = true;
+        form.reset();
+        setTimeout(function () { btn.innerHTML = original; btn.disabled = false; }, 4000);
+        return;
+      }
+
       btn.disabled = true;
-      form.reset();
-      setTimeout(function () {
-        btn.innerHTML = original;
-        btn.disabled = false;
-      }, 4000);
+      btn.innerHTML = "Enviando…";
+
+      fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form)
+      })
+        .then(function (res) {
+          if (res.ok) {
+            btn.innerHTML = "✓ Mensaje enviado. Te contactamos pronto.";
+            form.reset();
+          } else {
+            btn.innerHTML = "No se pudo enviar. Escríbenos a hola@sentia.es";
+          }
+        })
+        .catch(function () {
+          btn.innerHTML = "No se pudo enviar. Escríbenos a hola@sentia.es";
+        })
+        .then(function () {
+          setTimeout(function () { btn.innerHTML = original; btn.disabled = false; }, 4000);
+        });
     });
   }
 
