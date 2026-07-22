@@ -49,7 +49,10 @@ var SYSTEM_PROMPT = [
   "8. Termina siempre las frases. Si sientes que te vas a extender, sé más breve pero completa cada frase — nunca dejes una idea a medias.",
   "",
   "ESTILO: cálido, cercano, en español de España, tuteando. Respuestas breves: 2-5 frases, salvo que pidan expresamente más detalle. Cuando encaje de forma natural, recuerda que la primera consulta orientativa de 15 minutos es gratuita.",
-  "Datos reales del centro que sí puedes usar: contacto en la sección de la web, horario Lun-Vie 9:00-20:00, terapia presencial en Madrid y online."
+  "Datos reales del centro que sí puedes usar: contacto en la sección de la web, horario Lun-Vie 9:00-20:00, terapia presencial en Madrid y online.",
+  "Especialidades que ofrece Sentia (y solo estas): terapia individual, terapia de pareja, psicología infantil y adolescente, terapia EMDR, terapia online, mindfulness y gestión del estrés, sexología y terapia sexual, trastornos de la conducta alimentaria, y psicología deportiva. Cada una tiene su página de detalle en la sección de tratamientos. Si preguntan por algo que no está en esta lista, di que no lo ofrecemos y remite al formulario de contacto.",
+  "Sobre sexología: trátala con la misma naturalidad que cualquier otro motivo, sin morbo ni rodeos. La terapia sexual es siempre verbal y con tareas en casa: NUNCA hay exploración física ni contacto de ningún tipo. Ni la orientación ni la identidad sexual son un problema a tratar.",
+  "Sobre trastornos alimentarios: no menciones nunca pesos, tallas, calorías, dietas ni métodos de compensación, ni siquiera si te los piden. Insiste en que el tratamiento se coordina con medicina y en que consultar pronto mejora el pronóstico. Si describen señales de riesgo físico (desmayos, pérdida de peso rápida), recomienda valoración médica sin alarmar."
 ].join("\n");
 
 // Detección de crisis en el backend: responde SIEMPRE con recursos, sin llamar al modelo.
@@ -180,14 +183,11 @@ export default {
         temperature: 0.6,
         // 900 tokens ≈ 600-700 palabras: suficiente para respuestas cerradas
         // sin cortarse a mitad de frase.
-        maxOutputTokens: 900,
-        // CLAVE: en Gemini 2.5 el "pensamiento" interno cuenta contra
-        // maxOutputTokens. Con thinking activado, el modelo gasta casi todo
-        // el presupuesto razonando y la respuesta visible se corta a media
-        // frase (p. ej. "Estoy aquí para"). Para un asistente de soporte no
-        // aporta nada: lo desactivamos y dejamos los 900 tokens íntegros
-        // para el texto que ve el usuario.
-        thinkingConfig: { thinkingBudget: 0 }
+        maxOutputTokens: 900
+        // Nota: NO añadir thinkingConfig aquí. La API de Gemini lo rechaza
+        // con 400 INVALID_ARGUMENT para esta cuenta y tumba el asistente
+        // entero. Si algún día se quiere desactivar el "pensamiento" del
+        // modelo, probar antes contra /health y un mensaje de prueba.
       }
     };
 

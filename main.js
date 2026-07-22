@@ -23,6 +23,45 @@
     onScroll();
   }
 
+  /* ---------- Menú desplegable de "Tratamientos" ----------
+     Con :hover ya funciona en escritorio. Este JS solo añade:
+       - Clic en el trigger (para pantallas táctiles con puntero fino)
+       - Cerrar con Escape o clic fuera
+       - aria-expanded sincronizado
+     El trigger sigue siendo un enlace normal — un simple click sin abrir el
+     menú (por ejemplo desde el hover) lleva a #tratamientos igual que antes. */
+  function initNavMenu() {
+    var group = $(".has-menu");
+    if (!group) return;
+    var trigger = $(".nav-trigger", group);
+    if (!trigger) return;
+    var isTouch = matchMedia("(hover: none)").matches;
+
+    function setOpen(open) {
+      trigger.setAttribute("aria-expanded", String(open));
+    }
+
+    // En táctil, el primer toque abre el menú (no navega); el segundo, navega.
+    trigger.addEventListener("click", function (e) {
+      if (!isTouch) return;
+      if (trigger.getAttribute("aria-expanded") !== "true") {
+        e.preventDefault();
+        setOpen(true);
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && trigger.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        trigger.focus();
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!group.contains(e.target)) setOpen(false);
+    });
+  }
+
   /* ---------- Menú móvil ---------- */
   function initMobileMenu() {
     var toggle = $(".nav-toggle");
@@ -742,6 +781,7 @@
   /* ---------- Boot ---------- */
   function boot() {
     safe(initNav, "initNav");
+    safe(initNavMenu, "initNavMenu");
     safe(initMobileMenu, "initMobileMenu");
     safe(initReveals, "initReveals");
     safe(initHeroIntro, "initHeroIntro");

@@ -33,14 +33,14 @@
     "@context": "https://schema.org",
     "@type": ["MedicalBusiness", "LocalBusiness"],
     "name": "Sentia · Psicología y Terapias",
-    "description": "Centro de psicología y terapias en Madrid. Terapia individual, de pareja, infantil, EMDR, online y mindfulness.",
+    "description": "Centro de psicología y terapias en Madrid. Terapia individual, de pareja, infantil, EMDR, online, mindfulness, sexología, trastornos alimentarios y psicología deportiva.",
     "url": "https://sentia.es",
     "logo": "https://sentia.es/assets/img/favicon.svg",
     "image": "https://sentia.es/assets/img/hero.webp",
     "telephone": "+34-600-000-000",
     "email": "hola@sentia.es",
     "priceRange": "€€",
-    "medicalSpecialty": ["Psychiatric", "Psychotherapy"],
+    "medicalSpecialty": ["Psychiatric", "Psychotherapy", "SportsMedicine"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Calle de la Calma 12, 1ºA",
@@ -109,7 +109,53 @@
         Sentia<em>.</em>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="#tratamientos">Tratamientos</a>
+        <div class="nav-item has-menu">
+          <a href="#tratamientos" class="nav-trigger" aria-haspopup="true" aria-expanded="false">
+            Tratamientos
+            <svg class="nav-caret" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </a>
+          <div class="nav-menu" role="menu">
+            <div class="nav-menu-grid">
+              <a role="menuitem" href="terapias/individual.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="4.2"/><path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M5 29h22"/></svg></span>
+                <span class="nm-txt"><strong>Terapia individual</strong><small>Ansiedad, depresión, autoestima</small></span>
+              </a>
+              <a role="menuitem" href="terapias/pareja.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="16" r="7.5"/><circle cx="20" cy="16" r="7.5"/></svg></span>
+                <span class="nm-txt"><strong>Terapia de pareja</strong><small>Comunicación, conflictos, crisis</small></span>
+              </a>
+              <a role="menuitem" href="terapias/infantil.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 28V13"/><path d="M16 17c-5 0-7-3-7-7 4 0 7 2.5 7 7z"/><path d="M16 14c4.4 0 6.2-2.6 6.2-6.2C18.4 7.8 16 10 16 14z"/></svg></span>
+                <span class="nm-txt"><strong>Infantil y adolescente</strong><small>Emociones, conducta, familia</small></span>
+              </a>
+              <a role="menuitem" href="terapias/emdr.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16s5-7 13-7 13 7 13 7-5 7-13 7S3 16 3 16z"/><circle cx="16" cy="16" r="3.2"/></svg></span>
+                <span class="nm-txt"><strong>EMDR</strong><small>Trauma y experiencias difíciles</small></span>
+              </a>
+              <a role="menuitem" href="terapias/online.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="24" height="16" rx="2.5"/><path d="M12 27h8"/><path d="M13.5 15.5l5 2.5-5 2.5z"/></svg></span>
+                <span class="nm-txt"><strong>Terapia online</strong><small>Desde donde estés</small></span>
+              </a>
+              <a role="menuitem" href="terapias/mindfulness.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="3"/><path d="M9.5 22.5a9 9 0 010-13"/><path d="M22.5 9.5a9 9 0 010 13"/></svg></span>
+                <span class="nm-txt"><strong>Mindfulness</strong><small>Estrés y gestión emocional</small></span>
+              </a>
+              <a role="menuitem" href="terapias/sexologia.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27S5 20 5 13.5A6 6 0 0116 10a6 6 0 0111 3.5C27 20 16 27 16 27z"/><path d="M10.5 16h3l2-3.2 2 6 2-2.8h2.5"/></svg></span>
+                <span class="nm-txt"><strong>Sexología</strong><small>Deseo, dificultades, identidad</small></span>
+              </a>
+              <a role="menuitem" href="terapias/alimentacion.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11.5"/><path d="M16 22s-4.6-3-4.6-6.1A2.9 2.9 0 0116 14.3a2.9 2.9 0 014.6-.4c0 3.1-4.6 8.1-4.6 8.1z"/></svg></span>
+                <span class="nm-txt"><strong>T. alimentarios</strong><small>Anorexia, bulimia, atracones</small></span>
+              </a>
+              <a role="menuitem" href="terapias/deportiva.html">
+                <span class="nm-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="19" r="9.5"/><path d="M16 19v-5.5"/><path d="M12.5 4h7"/><path d="M16 4v5.5"/></svg></span>
+                <span class="nm-txt"><strong>Deportiva</strong><small>Presión, lesión, motivación</small></span>
+              </a>
+            </div>
+            <a class="nav-menu-foot" href="#tratamientos">Ver el resumen en la portada <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
         <a href="#acompanamos">Te acompañamos</a>
         <a href="#testimonios">Testimonios</a>
         <a href="#faq">Preguntas</a>
@@ -123,7 +169,20 @@
   </header>
 
   <div class="mobile-menu" hidden>
-    <a href="#tratamientos">Tratamientos</a>
+    <details class="mm-group">
+      <summary>Tratamientos<span class="mm-caret" aria-hidden="true">▾</span></summary>
+      <div class="mm-sub">
+        <a href="terapias/individual.html">Terapia individual</a>
+        <a href="terapias/pareja.html">Terapia de pareja</a>
+        <a href="terapias/infantil.html">Infantil y adolescente</a>
+        <a href="terapias/emdr.html">EMDR</a>
+        <a href="terapias/online.html">Terapia online</a>
+        <a href="terapias/mindfulness.html">Mindfulness</a>
+        <a href="terapias/sexologia.html">Sexología</a>
+        <a href="terapias/alimentacion.html">Trastornos alimentarios</a>
+        <a href="terapias/deportiva.html">Deportiva</a>
+      </div>
+    </details>
     <a href="#acompanamos">Te acompañamos</a>
     <a href="#testimonios">Testimonios</a>
     <a href="#faq">Preguntas</a>
@@ -275,6 +334,27 @@
             <p>Programas grupales e individuales para aprender a parar, respirar y volver al presente.</p>
             <a class="bento-link" href="terapias/mindfulness.html">Saber más<span aria-hidden="true">→</span></a>
           </article>
+          <article class="bento-card" data-tilt>
+            <span class="bento-num" aria-hidden="true">07</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27S5 20 5 13.5A6 6 0 0116 10a6 6 0 0111 3.5C27 20 16 27 16 27z"/><path d="M10.5 16h3l2-3.2 2 6 2-2.8h2.5"/></svg></span>
+            <h3>Sexología y terapia sexual</h3>
+            <p>Deseo, dificultades en la relación íntima, dolor o dudas sobre identidad. Un espacio sin tabúes, con rigor clínico y cero juicios.</p>
+            <a class="bento-link" href="terapias/sexologia.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="bento-num" aria-hidden="true">08</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11.5"/><path d="M16 22s-4.6-3-4.6-6.1A2.9 2.9 0 0116 14.3a2.9 2.9 0 014.6-.4c0 3.1-4.6 8.1-4.6 8.1z"/></svg></span>
+            <h3>Trastornos de la conducta alimentaria</h3>
+            <p>Anorexia, bulimia, atracones y la relación difícil con la comida y el cuerpo. Tratamiento especializado y coordinado con tu médico.</p>
+            <a class="bento-link" href="terapias/alimentacion.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="bento-num" aria-hidden="true">09</span>
+            <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="19" r="9.5"/><path d="M16 19v-5.5"/><path d="M12.5 4h7"/><path d="M16 4v5.5"/></svg></span>
+            <h3>Psicología deportiva</h3>
+            <p>Bloqueos, presión por competir, vuelta tras lesión y motivación. Entrenamos la cabeza igual que se entrena el cuerpo.</p>
+            <a class="bento-link" href="terapias/deportiva.html">Saber más<span aria-hidden="true">→</span></a>
+          </article>
         </div>
       </div>
     </section>
@@ -319,6 +399,14 @@
           <details class="acc-item">
             <summary><span class="acc-num">07</span><h3>Trauma y TOC</h3><span class="acc-plus" aria-hidden="true"></span></summary>
             <div class="acc-body"><p>Experiencias difíciles que siguen doliendo, rituales o pensamientos intrusivos. Con EMDR y exposición con prevención de respuesta, hay salida.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">08</span><h3>Relación con la comida y el cuerpo</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Contar calorías sin parar, atracones, culpa después de comer o no soportar mirarte al espejo. Los trastornos alimentarios tienen tratamiento, y cuanto antes se empieza, mejor es el pronóstico.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="acc-num">09</span><h3>Sexualidad y deseo</h3><span class="acc-plus" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>Falta de deseo, dolor, dificultades en la respuesta sexual o dudas sobre tu identidad u orientación. Se habla poco de ello y afecta mucho: en consulta es un tema más, sin morbo ni juicios.</p></div>
           </details>
         </div>
       </div>
@@ -501,12 +589,12 @@
         <form class="contact-form reveal" action="#" method="post" novalidate>
           <div class="form-row">
             <div class="field">
-              <label for="f-name">Nombre</label>
-              <input id="f-name" name="nombre" type="text" placeholder="Tu nombre" required>
+              <label for="f-name">Nombre y apellidos</label>
+              <input id="f-name" name="nombre" type="text" placeholder="Tu nombre completo" required>
             </div>
             <div class="field">
               <label for="f-phone">Teléfono</label>
-              <input id="f-phone" name="telefono" type="tel" placeholder="600 000 000">
+              <input id="f-phone" name="telefono" type="tel" placeholder="600 000 000" required>
             </div>
           </div>
           <div class="field">
@@ -515,8 +603,8 @@
           </div>
           <div class="field">
             <label for="f-topic">¿Qué te gustaría trabajar?</label>
-            <select id="f-topic" name="motivo">
-              <option value="">Selecciona una opción (opcional)</option>
+            <select id="f-topic" name="motivo" required>
+              <option value="">Selecciona una opción</option>
               <option>Ansiedad</option>
               <option>Depresión o apatía</option>
               <option>Terapia de pareja</option>

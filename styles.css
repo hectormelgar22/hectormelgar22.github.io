@@ -292,6 +292,153 @@ h1, h2, h3, h4 {
 .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
 .nav .btn-nav { display: none; margin-left: 0.5rem; }
 
+/* ---- Nav dropdown (Tratamientos) ---- */
+.nav-item { position: relative; display: inline-flex; align-items: center; }
+.nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+.nav-caret {
+  width: 12px; height: 12px;
+  transition: transform 0.35s var(--ease);
+  opacity: 0.7;
+}
+.has-menu:hover .nav-caret,
+.has-menu:focus-within .nav-caret,
+.nav-trigger[aria-expanded="true"] .nav-caret { transform: rotate(180deg); }
+
+.nav-menu {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 50%;
+  transform: translate(-50%, -8px);
+  min-width: 620px;
+  padding: 1.1rem;
+  background: rgba(245, 242, 234, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow:
+    0 24px 60px -20px rgba(10, 35, 49, 0.28),
+    0 6px 18px -8px rgba(10, 35, 49, 0.14);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.28s var(--ease), transform 0.32s var(--ease), visibility 0s linear 0.32s;
+  z-index: 110;
+}
+.nav-menu::before {
+  content: "";
+  position: absolute;
+  inset: -14px 0 auto 0;
+  height: 14px;
+  /* puente invisible: evita que el menú se cierre al pasar del trigger al panel */
+}
+.has-menu:hover .nav-menu,
+.has-menu:focus-within .nav-menu,
+.nav-trigger[aria-expanded="true"] + .nav-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+  transition: opacity 0.28s var(--ease), transform 0.32s var(--ease), visibility 0s;
+}
+.nav-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.35rem;
+}
+.nav-menu-grid a {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  color: var(--ink) !important;
+  transition: background 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.nav-menu-grid a::after { display: none; }
+.nav-menu-grid a:hover {
+  background: rgba(15, 107, 92, 0.08);
+  transform: translateY(-1px);
+}
+.nm-icon {
+  display: grid; place-items: center;
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: rgba(15, 107, 92, 0.08);
+  color: var(--emerald);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease);
+}
+.nm-icon svg { width: 20px; height: 20px; }
+.nav-menu-grid a:hover .nm-icon {
+  background: var(--emerald);
+  color: var(--cream);
+}
+.nm-txt { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.nm-txt strong {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.nm-txt small {
+  font-size: 0.78rem;
+  color: rgba(10, 35, 49, 0.55);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-menu-foot {
+  display: block;
+  margin-top: 0.6rem;
+  padding: 0.75rem 0.85rem;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--emerald) !important;
+  font-weight: 500;
+}
+.nav-menu-foot::after { display: none; }
+.nav-menu-foot:hover { color: var(--sea) !important; }
+
+/* Cuando el nav está en oscuro (arriba del scroll), el trigger es claro */
+.nav-trigger { color: inherit; }
+.nav-links > .nav-item > .nav-trigger { color: rgba(245, 242, 234, 0.85); }
+.nav.is-scrolled .nav-links > .nav-item > .nav-trigger { color: rgba(10, 35, 49, 0.75); }
+
+/* Submenú del mobile-menu */
+.mm-group { width: 100%; text-align: center; }
+.mm-group summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  color: var(--cream);
+}
+.mm-group summary::-webkit-details-marker { display: none; }
+.mm-caret { transition: transform 0.3s var(--ease); font-size: 0.9em; opacity: 0.7; }
+.mm-group[open] .mm-caret { transform: rotate(180deg); }
+.mm-sub {
+  display: flex; flex-direction: column; gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+.mm-sub a {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: rgba(245, 242, 234, 0.75);
+  font-weight: 400;
+}
+.mm-sub a:hover { color: var(--cream); }
+
 .nav-toggle {
   margin-left: auto;
   width: 44px; height: 44px;
