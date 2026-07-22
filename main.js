@@ -73,6 +73,11 @@
       toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
       menu.hidden = !open;
       document.body.style.overflow = open ? "hidden" : "";
+      if (!open) {
+        var det = menu.querySelector("details[open]");
+        if (det) det.removeAttribute("open");
+        menu.scrollTop = 0;
+      }
     }
 
     toggle.addEventListener("click", function () {

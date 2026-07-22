@@ -467,6 +467,9 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 5rem 1.5rem 3rem;
 }
 .mobile-menu[hidden] { display: none; }
 .mobile-menu a {
