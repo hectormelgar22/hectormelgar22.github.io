@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sentia · Psicología y Terapias en Madrid</title>
-  <meta name="description" content="Centro de psicología y terapias. Acompañamiento profesional para ansiedad, depresión, pareja y crecimiento personal. Primera consulta orientativa gratuita.">
+  <meta name="description" content="Centro de psicología y terapias en Madrid. Acompañamiento profesional para ansiedad, depresión, pareja y crecimiento personal. Sesiones presenciales y online, precio por sesión.">
   <meta name="theme-color" content="#0a2331">
   <meta name="author" content="Sentia · Psicología y Terapias">
   <link rel="canonical" href="https://sentia.es/">
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sentia">
   <meta property="og:title" content="Sentia · Psicología y Terapias en Madrid">
-  <meta property="og:description" content="Terapia psicológica basada en evidencia, con la calma y la cercanía que necesitas. Primera consulta orientativa gratuita.">
+  <meta property="og:description" content="Terapia psicológica basada en evidencia, con la calma y la cercanía que necesitas. Sesiones presenciales y online en Madrid.">
   <meta property="og:image" content="https://sentia.es/assets/img/hero.webp">
   <meta property="og:image:alt" content="Consulta de Sentia — butaca verde con plantas y libros en un ambiente acogedor">
   <meta property="og:locale" content="es_ES">
@@ -68,7 +68,7 @@
       { "@type": "Question", "name": "¿Cuánto dura una sesión y con qué frecuencia son?",
         "acceptedAnswer": { "@type": "Answer", "text": "Las sesiones individuales duran 60 minutos y las de pareja 75. Al principio suelen ser semanales; a partir del segundo o tercer mes muchas personas pasan a quincenales." } },
       { "@type": "Question", "name": "¿Cuánto cuesta la terapia?",
-        "acceptedAnswer": { "@type": "Answer", "text": "La primera consulta de orientación (15 min) es gratuita y sin compromiso. Ofrecemos bonos con descuento y tarifa reducida para estudiantes y personas en desempleo." } },
+        "acceptedAnswer": { "@type": "Answer", "text": "Cada sesión tiene un precio único y transparente según el tipo de terapia, que puedes consultar en la sección de Tarifas. No hay cuotas ni permanencia: pagas solo las sesiones a las que vienes, al finalizar cada una, en efectivo o con tarjeta." } },
       { "@type": "Question", "name": "¿La terapia online funciona igual que la presencial?",
         "acceptedAnswer": { "@type": "Answer", "text": "Para la mayoría de motivos de consulta la evidencia científica muestra resultados equivalentes. Usamos videollamada cifrada." } },
       { "@type": "Question", "name": "¿Cuánto tiempo tarda en notarse un cambio?",
@@ -89,12 +89,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=20260720e">
+  <link rel="stylesheet" href="styles.css?v=20260722a">
 
   <script defer src="lib/gsap.min.js"></script>
   <script defer src="lib/ScrollTrigger.min.js"></script>
   <script defer src="lib/manifest.js"></script>
-  <script defer src="main.js?v=20260720e"></script>
+  <script defer src="main.js?v=20260722a"></script>
   <script defer src="chat.js?v=20260720c"></script>
 </head>
 <body>
@@ -158,6 +158,7 @@
         </div>
         <a href="#acompanamos">Te acompañamos</a>
         <a href="#testimonios">Testimonios</a>
+        <a href="#tarifas">Tarifas</a>
         <a href="#faq">Preguntas</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -185,6 +186,7 @@
     </details>
     <a href="#acompanamos">Te acompañamos</a>
     <a href="#testimonios">Testimonios</a>
+    <a href="#tarifas">Tarifas</a>
     <a href="#faq">Preguntas</a>
     <a href="#contacto">Contacto</a>
     <a class="btn btn-solid" href="#contacto">Reservar consulta</a>
@@ -442,7 +444,7 @@
           </li>
           <li class="step reveal">
             <span class="step-num" aria-hidden="true">2</span>
-            <h3>Primera consulta gratuita</h3>
+            <h3>Primera toma de contacto</h3>
             <p>15 minutos para conocernos, entender qué necesitas y proponerte el terapeuta y enfoque adecuados.</p>
           </li>
           <li class="step reveal">
@@ -503,6 +505,104 @@
       </div>
     </section>
 
+    <!-- ============ TARIFAS ============ -->
+    <section class="pricing" id="tarifas" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head pricing-head">
+          <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Tarifas</p>
+          <h2 id="pricing-title" class="section-title reveal">Precios claros, <em>sin sorpresas</em></h2>
+          <p class="section-lead reveal">Una tarifa por sesión, sin cuotas ni permanencia. Pagas solo las sesiones a las que vienes, y lo haces al terminar cada una.</p>
+        </div>
+
+        <!-- EDITABLE: cambia el número dentro de <span class="price-num"> para ajustar cada precio -->
+        <div class="price-grid">
+
+          <!-- Infantil y adolescente -->
+          <article class="price-card reveal" data-tilt>
+            <div class="price-top">
+              <span class="price-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 28V13"/><path d="M16 17c-5 0-7-3-7-7 4 0 7 2.5 7 7z"/><path d="M16 14c4.4 0 6.2-2.6 6.2-6.2C18.4 7.8 16 10 16 14z"/></svg></span>
+              <h3>Infantil y adolescente</h3>
+              <p class="price-desc">Acompañamiento a los más jóvenes y a sus familias.</p>
+            </div>
+            <div class="price-amount">
+              <span class="price-cur">€</span><span class="price-num">55</span>
+              <span class="price-per">/ sesión</span>
+            </div>
+            <ul class="price-feats">
+              <li>Sesión de 50 minutos</li>
+              <li>Pautas para la familia</li>
+              <li>Coordinación con el colegio si hace falta</li>
+            </ul>
+            <a class="btn btn-outline btn-full" href="#contacto">Reservar</a>
+          </article>
+
+          <!-- Individual · destacada -->
+          <article class="price-card price-featured reveal" data-tilt>
+            <span class="price-badge">La más habitual</span>
+            <div class="price-top">
+              <span class="price-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="4.2"/><path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M5 29h22"/></svg></span>
+              <h3>Terapia individual</h3>
+              <p class="price-desc">Un espacio íntimo para adultos, sin juicios.</p>
+            </div>
+            <div class="price-amount">
+              <span class="price-cur">€</span><span class="price-num">55</span>
+              <span class="price-per">/ sesión</span>
+            </div>
+            <ul class="price-feats">
+              <li>Sesión de 60 minutos</li>
+              <li>Presencial u online</li>
+              <li>Plan personalizado a tu ritmo</li>
+            </ul>
+            <a class="btn btn-cream btn-full" href="#contacto">Reservar</a>
+          </article>
+
+          <!-- Pareja / familia -->
+          <article class="price-card reveal" data-tilt>
+            <div class="price-top">
+              <span class="price-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="16" r="7.5"/><circle cx="20" cy="16" r="7.5"/></svg></span>
+              <h3>Pareja y familia</h3>
+              <p class="price-desc">Recuperar la comunicación y la complicidad, juntos.</p>
+            </div>
+            <div class="price-amount">
+              <span class="price-cur">€</span><span class="price-num">70</span>
+              <span class="price-per">/ sesión</span>
+            </div>
+            <ul class="price-feats">
+              <li>Sesión de 75 minutos</li>
+              <li>Para pareja o núcleo familiar</li>
+              <li>Enfoque sistémico</li>
+            </ul>
+            <a class="btn btn-outline btn-full" href="#contacto">Reservar</a>
+          </article>
+
+          <!-- Online -->
+          <article class="price-card reveal" data-tilt>
+            <div class="price-top">
+              <span class="price-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="24" height="16" rx="2.5"/><path d="M12 27h8"/><path d="M13.5 15.5l5 2.5-5 2.5z"/></svg></span>
+              <h3>Terapia online</h3>
+              <p class="price-desc">La misma calidad terapéutica, desde donde estés.</p>
+            </div>
+            <div class="price-amount">
+              <span class="price-cur">€</span><span class="price-num">45</span>
+              <span class="price-per">/ sesión</span>
+            </div>
+            <ul class="price-feats">
+              <li>Sesión de 60 minutos</li>
+              <li>Videollamada segura</li>
+              <li>Horarios flexibles</li>
+            </ul>
+            <a class="btn btn-outline btn-full" href="#contacto">Reservar</a>
+          </article>
+
+        </div>
+
+        <p class="price-foot reveal">
+          <span class="price-foot-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/><path d="M2.5 10h19"/></svg></span>
+          El pago se realiza <strong>al finalizar cada sesión</strong>, en efectivo o con tarjeta. Sin cuotas ni permanencia.
+        </p>
+      </div>
+    </section>
+
     <!-- ============ FAQ ============ -->
     <section class="faq" id="faq" aria-labelledby="faq-title">
       <div class="container faq-grid">
@@ -523,7 +623,7 @@
 
           <details class="faq-item">
             <summary><span>¿Cuánto cuesta la terapia?</span><i aria-hidden="true"></i></summary>
-            <div class="faq-body"><p>La primera consulta de orientación (15 min) es gratuita y sin compromiso. A partir de ahí, cada sesión tiene un precio único y transparente que te decimos antes de reservar. Ofrecemos bonos de 4 y 8 sesiones con descuento y tarifa reducida para estudiantes y personas en desempleo.</p></div>
+            <div class="faq-body"><p>Cada sesión tiene un precio único y transparente según el tipo de terapia, que puedes consultar en nuestra sección de <a href="#tarifas">Tarifas</a>. No hay cuotas ni permanencia: pagas solo las sesiones a las que vienes, y lo haces al finalizar cada una, en efectivo o con tarjeta.</p></div>
           </details>
 
           <details class="faq-item">
@@ -602,17 +702,31 @@
             <input id="f-email" name="email" type="email" placeholder="tu@email.com" required>
           </div>
           <div class="field">
-            <label for="f-topic">¿Qué te gustaría trabajar?</label>
+            <label for="f-topic">¿Qué terapia te interesa?</label>
             <select id="f-topic" name="motivo" required>
               <option value="">Selecciona una opción</option>
-              <option>Ansiedad</option>
-              <option>Depresión o apatía</option>
-              <option>Terapia de pareja</option>
-              <option>Estrés / burnout</option>
-              <option>Autoestima</option>
-              <option>Duelo</option>
-              <option>Otro</option>
+              <optgroup label="Adultos">
+                <option>Terapia individual</option>
+                <option>Terapia de pareja</option>
+                <option>Terapia familiar</option>
+              </optgroup>
+              <optgroup label="Niños y adolescentes">
+                <option>Psicología infantil</option>
+                <option>Psicología adolescente</option>
+              </optgroup>
+              <optgroup label="Especialidades">
+                <option>EMDR · Trauma</option>
+                <option>Mindfulness y gestión del estrés</option>
+                <option>Sexología y terapia sexual</option>
+                <option>Trastornos de la conducta alimentaria</option>
+                <option>Psicología deportiva</option>
+              </optgroup>
+              <optgroup label="Otros">
+                <option>Terapia online</option>
+                <option>No lo tengo claro todavía</option>
+              </optgroup>
             </select>
+            <p class="field-hint">Consulta el precio de cada sesión en <a href="#tarifas">Tarifas</a>. El pago se realiza al finalizar cada sesión, en efectivo o con tarjeta.</p>
           </div>
           <div class="field">
             <label for="f-msg">Cuéntanos un poco más</label>
