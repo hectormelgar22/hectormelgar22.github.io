@@ -15,7 +15,9 @@
 var ALLOWED_ORIGINS = [
   "https://hectormelgar22.github.io",   // tu web en GitHub Pages
   "http://localhost:8123",              // desarrollo local
-  "http://127.0.0.1:8123"
+  "http://127.0.0.1:8123",
+  "http://localhost:8080",
+  "http://127.0.0.1:8080"
 ];
 
 // Se prueban en orden hasta encontrar uno disponible para tu API key
