@@ -15,28 +15,14 @@
     var root = document.createElement("div");
     root.className = "chat-root";
     root.innerHTML =
-      '<button type="button" class="chat-fab" aria-label="Abrir asistente con IA de Sentia" aria-expanded="false">' +
-      '<span class="chat-fab-icon" aria-hidden="true">' +
-      // Icono propio: nodo/cerebro estilizado con chispas ("sparkles" = IA generativa
-      // en el lenguaje visual actual, evita confusión con burbuja de WhatsApp).
-      '<svg viewBox="0 0 26 26" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' +
-      '<path d="M13 5.2c2.5 0 4.6 1.6 4.6 3.9 0 1.1-.5 2-1.3 2.7.8.5 1.3 1.4 1.3 2.4 0 1.9-1.9 3.5-4.2 3.5H10c-2.3 0-4.2-1.6-4.2-3.5 0-1 .5-1.9 1.3-2.4-.8-.7-1.3-1.6-1.3-2.7 0-2.3 2.1-3.9 4.6-3.9"/>' +
-      '<path d="M9.5 11.7h5M11 8.5v6.4"/>' +
-      // 3 chispas alrededor: la marca visual de "IA"
-      '<path d="M20.5 6.5l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z" fill="currentColor" stroke="none"/>' +
-      '<path d="M20.5 16.5l.4 1 1 .4-1 .4-.4 1-.4-1-1-.4 1-.4z" fill="currentColor" stroke="none"/>' +
-      '<path d="M4.5 5.5l.4 1 1 .4-1 .4-.4 1-.4-1-1-.4 1-.4z" fill="currentColor" stroke="none"/>' +
-      "</svg>" +
-      "</span>" +
-      '<span class="chat-fab-close" aria-hidden="true">×</span>' +
-      "</button>" +
       '<section class="chat-panel" hidden aria-label="Asistente con IA de Sentia">' +
       '<header class="chat-header">' +
       // Avatar con el mismo icono, pequeño, sobre gradiente de marca
       '<span class="chat-header-avatar" aria-hidden="true">' +
-      '<svg viewBox="0 0 26 26" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
-      '<path d="M13 5.2c2.5 0 4.6 1.6 4.6 3.9 0 1.1-.5 2-1.3 2.7.8.5 1.3 1.4 1.3 2.4 0 1.9-1.9 3.5-4.2 3.5H10c-2.3 0-4.2-1.6-4.2-3.5 0-1 .5-1.9 1.3-2.4-.8-.7-1.3-1.6-1.3-2.7 0-2.3 2.1-3.9 4.6-3.9"/>' +
-      '<path d="M9.5 11.7h5M11 8.5v6.4"/>' +
+      '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M9.8 17.5c-3.9 0-7-2.9-7-6.5S5.9 4.5 9.8 4.5c3.9 0 7 2.9 7 6.5 0 .9-.2 1.8-.6 2.6l1.3 3.4-3.5-1.1c-1.2.7-2.6 1.1-4.2 1.1z"/>' +
+      '<path d="M19 2l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z" fill="currentColor" stroke="none"/>' +
+      '<path d="M7.5 11h.01M10 11h.01M12.5 11h.01" stroke-width="2.5" stroke-linecap="round"/>' +
       "</svg>" +
       "</span>" +
       "<div><strong>Asistente IA de Sentia</strong>" +
@@ -51,7 +37,34 @@
       "</button>" +
       "</form>" +
       '<p class="chat-disclaimer">Asistente informativo con IA — no sustituye atención profesional. En crisis llama al <a href="tel:024">024</a>.</p>' +
-      "</section>";
+      "</section>" +
+      '<div class="chat-floating-actions">' +
+      '<a href="https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20las%20sesiones." class="floating-btn whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">' +
+      '<span class="floating-tooltip">WhatsApp</span>' +
+      '<span class="floating-btn-icon" aria-hidden="true">' +
+      '<svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">' +
+      '<path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 18.14c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.106 8.106 0 01-1.25-4.52c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.77 2.39a8.093 8.093 0 012.39 5.77c0 4.5-3.66 8.16-8.16 8.16zm4.47-6.1c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.02 2.6.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>' +
+      "</svg>" +
+      "</span>" +
+      "</a>" +
+      '<button type="button" class="floating-btn chat-fab" aria-label="Abrir asistente con IA de Sentia" aria-expanded="false">' +
+      '<span class="floating-tooltip">Asistente IA</span>' +
+      '<span class="chat-fab-badge" aria-hidden="true">IA</span>' +
+      '<span class="chat-fab-icon" aria-hidden="true">' +
+      '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M9.8 17.5c-3.9 0-7-2.9-7-6.5S5.9 4.5 9.8 4.5c3.9 0 7 2.9 7 6.5 0 .9-.2 1.8-.6 2.6l1.3 3.4-3.5-1.1c-1.2.7-2.6 1.1-4.2 1.1z"/>' +
+      '<path d="M19 2l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z" fill="currentColor" stroke="none"/>' +
+      '<path d="M7.5 11h.01M10 11h.01M12.5 11h.01" stroke-width="2.5" stroke-linecap="round"/>' +
+      "</svg>" +
+      "</span>" +
+      '<span class="chat-fab-close" aria-hidden="true">' +
+      '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<line x1="18" y1="6" x2="6" y2="18"></line>' +
+      '<line x1="6" y1="6" x2="18" y2="18"></line>' +
+      "</svg>" +
+      "</span>" +
+      "</button>" +
+      "</div>";
     document.body.appendChild(root);
     return root;
   }
